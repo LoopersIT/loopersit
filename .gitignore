@@ -1,0 +1,9 @@
+__pycache__/
+__pycache__
+/media/
+/static/
+secrets.json
+/liv/
+.vscode/
+config/__pycache__/
+config/settings/__pycache__/
