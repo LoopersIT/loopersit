@@ -437,11 +437,12 @@
   .service_box {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     /* gap: 2rem; */
   }
   .services {
-    width: 50%;
+    width: 45%;
   }
   /* -----about us -----------*/
   .about_stats {

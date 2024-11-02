@@ -1,0 +1,394 @@
+@import "base.css";
+
+/* ---------about_header----------------*/
+.about_header {
+  background: linear-gradient(
+    90deg,
+    rgba(35, 173, 173, 0.7) 0.07%,
+    rgba(42, 29, 81, 0.9) 99.93%
+  );
+  padding: 0 0 1rem 0;
+}
+.about_intro {
+  text-align: center;
+}
+
+.about_intro_icon {
+  width: 8rem;
+  height: 8rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0.5rem 0;
+}
+.about_tag {
+  display: block;
+  font-size: 0.7rem;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+/* ---------about_nav----------------*/
+.nav_card {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.nav_icon {
+  display: inline-block;
+  background-color: var(--secondary_col);
+  padding-top: 0.3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nav_icon:hover {
+  background-color: var(--prime_col);
+  color: #fff;
+}
+.nav_name {
+  text-decoration: none;
+  color: #000;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: ;
+}
+
+/* ---------Our portfolio----------------*/
+
+.portfolio_image_span {
+  background-color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project_image {
+  width: 100%;
+}
+.project_name {
+  background-color: var(--secondary_col);
+  padding: 0.7rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #fff;
+  /* opacity: 30%; */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.our_portfolio_button {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.our_portfolio_link {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  border: 1px solid var(--prime_col);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+.our_portfolio_link:hover {
+  background-color: var(--secondary_col);
+  color: #fff;
+  border: unset;
+}
+
+/* -----------Leading members-----------*/
+
+.employee_profile {
+  background-color: #fff;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 5rem;
+}
+.employee_img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-top: -3rem;
+  object-fit: cover;
+}
+.employee_name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.leading_member_button {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* ----------our message---------*/
+.our_message {
+  text-align: center;
+  background-color: #fff;
+}
+.the_message {
+  padding: 0.5rem 1rem;
+}
+
+/*------------Our vision-----------*/
+.our_vision_card {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 1.5rem;
+  /* height: -7rem; */
+  position: relative;
+}
+.subtract {
+  width: 60%;
+  /* height: 11rem; */
+}
+.vision_img {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.vision_details {
+  width: 9rem;
+  font-size: 0.7rem;
+  /* margin-top: -7rem; */
+  color: #fff;
+  left: 2rem;
+  position: absolute;
+}
+@media screen and (min-width: 769px) {
+  /* ---------about_header----------------*/
+  .about_header {
+    padding: 1rem 1rem;
+  }
+  .about_intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 0.7rem;
+    align-items: center;
+    text-align: left;
+  }
+  .about_intro_icon {
+    width: 15rem;
+    height: 15rem;
+  }
+  .about_tag {
+    font-size: 1.5rem;
+    font-family: 600;
+  }
+
+  /* ---------about_nav----------------*/
+  .about_nav {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 1.875rem 0 1.875rem;
+  }
+  .nav_card {
+    width: 50%;
+    border-radius: 15px;
+  }
+
+  /* -------------our portfolio -----------*/
+  .portfolio_section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 1.875rem 1rem 1.875rem;
+  }
+  .our_portfolio_link {
+    font-size: 1rem;
+  }
+  .project_image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* height: 10rem; */
+    /* margin-top: -3rem; */
+  }
+
+  .project_name {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  /* ----------Leading members---------*/
+  .leading_member {
+    margin-bottom: 5rem;
+  }
+  .employee_profile_list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .employee_profile {
+    padding: 1.5rem;
+  }
+  .employee_img {
+    margin-top: -5rem;
+  }
+
+  .horizontal_line {
+    background-color: var(--prime_col);
+    height: 6rem;
+    margin-top: -9rem;
+  }
+
+  .leading_member_button {
+    margin-top: 4.5rem;
+  }
+
+  /* -----------our message----------*/
+  .our_message {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: 15px;
+    margin: 0 1.875rem;
+  }
+  .message_img {
+    width: 15rem;
+    height: 15rem;
+    /* margin-left: 2rem; */
+  }
+
+  /*---------------our visions-------------*/
+  .subtract {
+    width: 50%;
+  }
+  .vision_img {
+    width: 15.5rem;
+    height: 15.5rem;
+    border-radius: 50%;
+  }
+  .vision_details {
+    width: 19rem;
+    font-size: 1.5rem;
+    left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* ---------about_header----------------*/
+  .about_intro_icon {
+    width: 25rem;
+    height: 25rem;
+  }
+  .about_tag {
+    font-size: 3rem;
+    font-family: 600;
+  }
+  /* ---------about_nav----------------*/
+  .nav_card {
+    padding: 1.5rem;
+  }
+  .nav_icon {
+    padding-top: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  /* ----------Our portfolio-----------*/
+  .our_portfolio_link {
+    font-size: 1.2rem;
+  }
+  /* ----------Leading members---------*/
+  .employee_profile {
+    padding: 3rem;
+  }
+  .employee_img {
+    width: 12rem;
+    height: 12rem;
+    margin-top: -8rem;
+  }
+  .horizontal_line {
+    background-color: var(--prime_col);
+    height: 7rem;
+    margin-top: -10rem;
+  }
+
+  /*-------------Our visions---------------*/
+  .subtract {
+    width: 60%;
+  }
+  .vision_img {
+    width: 31rem;
+    height: 31rem;
+    border-radius: 50%;
+  }
+
+  .vision_details {
+    width: 32rem;
+    font-size: 2.5rem;
+    left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  /* ---------about_header----------------*/
+  .about_intro {
+    gap: 0.4rem;
+  }
+  .about_intro_icon {
+    width: 38rem;
+    height: 38rem;
+  }
+  .about_tag {
+    font-size: 3.8rem;
+    font-family: 600;
+  }
+
+  /* ---------about_nav----------------*/
+  .nav_name {
+    font-size: 1.5rem;
+  }
+
+  /* ---------our portfolio----------------*/
+  .portfolio_section {
+    gap: 5rem;
+  }
+
+  /* ----------Leading members---------*/
+  .employee_profile {
+    padding: 5rem;
+  }
+  .employee_img {
+    width: 14rem;
+    height: 14rem;
+    margin-top: -10rem;
+  }
+  .employee_name {
+    margin-top: 2rem;
+  }
+
+  .horizontal_line {
+    background-color: var(--prime_col);
+    height: 8.5rem;
+    margin-top: -13rem;
+  }
+  .leading_member_button {
+    margin-top: 6rem;
+  }
+
+  /*-------------Our visions ---------------*/
+  .subtract {
+    width: 60%;
+  }
+  .vision_img {
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+  }
+  .vision_details {
+    width: 42rem;
+    font-size: 3rem;
+    left: 7rem;
+  }
+}

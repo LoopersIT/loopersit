@@ -1,6 +1,6 @@
 <nav class="navbar">
     <!-- <div class="logo"> -->
-    <a class="logoLink" href="">
+    <a class="logoLink" href="{% url 'homepage' %}">
       <div class="svgIcon">
         <svg
           class="logoIcon"
@@ -65,7 +65,7 @@
           <a class="nav_items_link {% if active == 'service' %} active{% endif %}" 
           href=""> Services </a>
           <a class="nav_items_link {% if active == 'about' %} active{% endif %}" 
-          href=""> About us </a>
+          href="{% url 'about_us' %}"> About us </a>
           <a class="nav_items_link {% if active == 'contact' %} active{% endif %}" 
           href=""> Contact us </a>
           <a class="nav_items_link {% if active == 'review' %} active{% endif %}" 
