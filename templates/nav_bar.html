@@ -63,7 +63,7 @@
         </button>
         <div class="menu_list hide_nav" id="menu">
           <a class="nav_items_link {% if active == 'service' %} active{% endif %}" 
-          href=""> Services </a>
+          href="{% url 'service_page' %}"> Services </a>
 
           <a class="nav_items_link {% if active == 'about' %} active{% endif %}" 
           href="{% url 'about_us' %}"> About us </a>
