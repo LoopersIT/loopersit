@@ -9,5 +9,7 @@ config/__pycache__/
 config/settings/__pycache__/
 blog/__pycache__/
 blog/migrations/__pycache__/
+career/__pycache__/
+career/migrations/__pycache__/
 loopers/__pycache__/
 loopers/migrations/__pycache__/
