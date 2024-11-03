@@ -8,3 +8,7 @@ def blog_list(request):
 
 def blog_detail(request):
     return render(request, 'blog/detail.html', {'active':'blog'})
+
+
+def blog_categories(request):
+    return render(request, 'blog/category_list.html', {'active': 'blog'})
