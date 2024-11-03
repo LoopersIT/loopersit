@@ -1,0 +1,88 @@
+@import 'base.css';
+
+.contact-container {
+    background: linear-gradient(90deg, rgba(35, 173, 173, 0.70) 0.07%, rgba(42, 29, 81, 0.90) 99.93%);
+    padding: .5rem;
+}
+
+.contact-title {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.faq-container {
+    background-color: white;
+    padding: .5rem;
+    border-right: 8rem solid #7BCDCD;
+    margin-top: 2rem;
+}
+
+.faq-list {
+    width: 70%;
+}
+
+.faq-title {
+    font-size: 1.3rem;
+}
+
+.faq {
+    margin-right: -9rem;
+}
+
+.question {
+    color: white;
+    background-color: var(--prime_col);
+    padding: .5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+.answer {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+    display: none;
+}
+
+.ans-active .answer {
+    display: block;
+}
+
+@media screen and (min-width: 769px){
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 2rem;
+    }
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .faq-container {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 2rem auto;
+        border-radius: .8rem;
+        padding: 2rem;
+        border-right: 20rem solid #7BCDCD;
+    }
+
+    .faq-title{
+        align-self: center;
+        font-size: 1.6rem;
+        width: 70%;
+    }
+
+    .faq {
+        margin-right: -15rem;
+    }
+
+    
+}
