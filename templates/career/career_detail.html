@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/career_detail.css' %}">
+{% endblock css %}
+
+
+
+{% block title %}
+    Career Detail
+{% endblock title %}
+
+
+
+{% block main %}
+    <!--Job description header-->
+
+    <div class="role_background">
+        <span class="job_name">UI/UX Designer - Mid level</span>
+        <span class="job_deadline">Deadline: 5th Aug, 2018</span>
+      </div>
+  
+      <!--Job responsibility-->
+      <div class="job_description">
+
+        <!-- discard all the lines starts here -->
+        <div class="overview_card">
+          <span class="job_heading">Overview</span>
+          <span class="job_overview">Location: Remote</span>
+          <span class="job_overview">Type: Full time</span>
+          <span class="job_overview">Department: Designing</span>
+          <span class="job_overview">Salary: Negotiable</span>
+        </div>
+        <div class="job_responsibility_card">
+          <span class="job_heading">Job responsibility</span>
+          <span class="responsibility_desc">
+            Develop intuitive and visually appealing interfaces through user
+            research, wireframes, prototypes, and design specifications.
+          </span>
+          <span class="responsibility_desc"
+            >Work closely with product managers, developers, and other
+            stakeholders to define design solutions that meet user needs and
+            business goals.
+          </span>
+          <span class="responsibility_desc"
+            >Perform usability testing, gather user feedback, and make data-driven
+            improvements to designs.</span
+          >
+          <span class="responsibility_desc"
+            >Ensure consistency in design by creating and maintaining style
+            guides, design systems, and UI component libraries</span
+          >
+          <span class="responsibility_desc"
+            >Keep up with the latest industry trends, tools, and technologies to
+            continuously enhance design quality and innovation</span
+          >
+        </div>
+
+        <!-- discard the lines ends here -->
+
+      </div>
+  
+      <!--Submit the form-->
+      <div></div>
+{% endblock main %}
+    
