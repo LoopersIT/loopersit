@@ -79,7 +79,7 @@
           href="{% url 'contact_us' %}"> Contact us </a>
 
           <a class="nav_items_link {% if active == 'blog' %} active{% endif %}" 
-          href=""> Blogs </a>
+          href="{% url 'blog_list' %}"> Blogs </a>
         </div>
       </li>
     </div>
