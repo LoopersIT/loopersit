@@ -72,7 +72,7 @@
           href="{% url 'reviews' %}"> Reviews </a>
 
           <a class="nav_items_link {% if active == 'career' %} active{% endif %}" 
-          href=""> Careers </a>
+          href="{% url 'career_list' %}"> Careers </a>
 
           <a class="nav_items_link {% if active == 'contact' %} active{% endif %}" 
           href="{% url 'contact_us' %}"> Contact us </a>

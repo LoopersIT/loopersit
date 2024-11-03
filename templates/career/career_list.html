@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/career_list.css' %}">
+{% endblock css %}
+
+
+{% block title %}
+    Careers
+{% endblock title %}
+
+
+
+{% block main %}
+     <!------------Career header ----------->
+     <div class="career_header_wrapper">
+        <div class="career_header">
+          <div class="career_header_intro">
+            <div class="career_header_details">
+              <span class="career_header_titles"
+                >Be a part of something great</span
+              >
+              <!-- <span class="career_header_action_titles"
+              >Your next big career move</span
+            > -->
+  
+              <div class="career_short_title">Your next big career move</div>
+            </div>
+            <img
+              class="career_header_subtract"
+              src="{% static 'img/career_header_subtract.svg' %}"
+              alt=""
+            />
+          </div>
+        </div>
+        <img class="career_header_img" src="{% static 'img/career_header_3.png' %}" alt="" />
+      </div>
+  
+      <!--------------Open Roles---------->
+      <div class="category_name">
+        <span class="first_cat">Open</span>
+        <span class="second_cat">Roles</span>
+      </div>
+
+
+
+
+  
+      <div class="position_list_wrapper">
+        <span class="position_name">UI/UX designer</span>
+        <div class="position_list">
+          <span class="role_desc"
+            >Ideal candidates should have experience in both web and mobile
+            design, with a strong understanding of responsive design
+            principles</span
+          >
+          <span class="role_deadline">Deadline: 5th August</span>
+          <a class="apply_link" href="">Details</a>
+        </div>
+      </div>
+
+
+
+  
+      <div class="position_list_wrapper">
+        <span class="position_name">Frontend web developer</span>
+        <div class="position_list">
+          <span class="role_desc"
+            >Ideal candidates should have experience in both web and mobile
+            design, with a strong understanding of responsive design principles,
+            user experience best practices, and the ability to create visually
+            appealing and intuitive interfaces across multiple platforms.</span
+          >
+          <span class="role_deadline">Deadline: 5th August</span>
+          <a class="apply_link" href="">Details</a>
+        </div>
+      </div>
+
+
+
+
+{% endblock main %}
+    

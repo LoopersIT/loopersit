@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     #local apps
     'loopers',
     'blog',
+    'career',
 ]
 
 MIDDLEWARE = [
