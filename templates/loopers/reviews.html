@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/reviews.css' %}">
+{% endblock css %}
+
+
+{% block title %}
+    Reviews
+{% endblock title %}
+
+
+
+{% block main %}
+     <!-----------Category devider ---------------------------->
+     <div class="category_name">
+        <span class="first_cat">What people say about</span>
+        <span class="second_cat">LoopersIT</span>
+      </div>
+      <!-- -----------------end of category devider ------------------------ -->
+
+      <div class="review-container">
+
+        
+        <div class="reviews">
+            <div class="reviews-person">
+                <img src="https://img.freepik.com/premium-photo/cartoon-man-wearing-glasses-shirt-with-smile-his-face_999340-53623.jpg" 
+                alt="person profile pic" class="review-image">
+                <h2 class="review-name">John Doe</h2>
+            </div>
+            <p class="review-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam 
+                voluptatem, quod eligendi quaerat, repudiandae vero tempore non iure cumque corrupti. 
+                Excepturi minima corporis maiores explicabo libero, illo ab saepe, 
+                sapiente officiis earum vero sed vel omnis veniam autem quibusdam.
+            </p>
+        </div>
+
+        
+        <div class="reviews">
+            <div class="reviews-person">
+                <img src="https://img.freepik.com/premium-photo/man-with-glasses-blue-shirt-that-says-he-is-smiling_1132399-5341.jpg" 
+                alt="person profile pic" class="review-image">
+                <h2 class="review-name">John Doe</h2>
+            </div>
+            <p class="review-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam 
+                voluptatem, quod eligendi quaerat, repudiandae vero tempore non iure cumque corrupti. 
+                Excepturi minima corporis maiores explicabo libero, illo ab saepe, 
+                sapiente officiis earum vero sed vel omnis veniam autem quibusdam.
+            </p>
+        </div>
+
+
+        <div class="reviews">
+            <div class="reviews-person">
+                <img src="https://img.freepik.com/premium-photo/man-with-glasses-blue-shirt-that-says-he-is-smiling_1132399-5341.jpg" 
+                alt="person profile pic" class="review-image">
+                <h2 class="review-name">John Doe</h2>
+            </div>
+            <p class="review-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam 
+                voluptatem, quod eligendi quaerat, repudiandae vero tempore non iure cumque corrupti. 
+                Excepturi minima corporis maiores explicabo libero, illo ab saepe, 
+                sapiente officiis earum vero sed vel omnis veniam autem quibusdam.
+            </p>
+        </div>
+
+
+        <div class="reviews">
+            <div class="reviews-person">
+                <img src="https://img.freepik.com/premium-photo/man-with-glasses-blue-shirt-that-says-he-is-smiling_1132399-5341.jpg" 
+                alt="person profile pic" class="review-image">
+                <h2 class="review-name">John Doe</h2>
+            </div>
+            <p class="review-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsam 
+                voluptatem, quod eligendi quaerat, repudiandae vero tempore non iure cumque corrupti. 
+                Excepturi minima corporis maiores explicabo libero, illo ab saepe, 
+                sapiente officiis earum vero sed vel omnis veniam autem quibusdam.
+            </p>
+        </div>
+
+
+      </div>
+{% endblock main %}
+    

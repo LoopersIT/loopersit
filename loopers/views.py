@@ -10,3 +10,6 @@ def about_us(request):
 
 def contact_us(request):
     return render(request, 'loopers/contact_us.html', {'active': 'contact'})
+
+def reviews(request):
+    return render(request, 'loopers/reviews.html', {'active':'review'})

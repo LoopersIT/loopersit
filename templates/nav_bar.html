@@ -68,14 +68,14 @@
           <a class="nav_items_link {% if active == 'about' %} active{% endif %}" 
           href="{% url 'about_us' %}"> About us </a>
 
-          <a class="nav_items_link {% if active == 'contact' %} active{% endif %}" 
-          href="{% url 'contact_us' %}"> Contact us </a>
-
           <a class="nav_items_link {% if active == 'review' %} active{% endif %}" 
-          href=""> Reviews </a>
+          href="{% url 'reviews' %}"> Reviews </a>
 
           <a class="nav_items_link {% if active == 'career' %} active{% endif %}" 
           href=""> Careers </a>
+
+          <a class="nav_items_link {% if active == 'contact' %} active{% endif %}" 
+          href="{% url 'contact_us' %}"> Contact us </a>
 
           <a class="nav_items_link {% if active == 'blog' %} active{% endif %}" 
           href=""> Blogs </a>
