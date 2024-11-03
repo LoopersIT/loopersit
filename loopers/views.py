@@ -8,6 +8,10 @@ def home_page(request):
 def service(request):
     return render(request, 'loopers/service.html', {'active': 'service'})
 
+def sub_service(request):
+    return render(request, 'loopers/sub_service.html', {'active': 'service'})
+
+
 def about_us(request):
     return render(request, 'loopers/about_us.html', {'active':'about'})
 
