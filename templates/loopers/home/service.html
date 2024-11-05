@@ -9,60 +9,24 @@
 
 <div class="service_box">
 
-
+{% for service in services %}
     <a href="" class="services">
       <span class="service_svg">
         <img
           class="service_img"
-          src="{% static 'img/no_img.jpg' %}"
+          src="
+          {% if service.home_icon %}
+            {{service.home_icon.url}}
+          {% else %}
+            {% static 'img/no_img.jpg' %}
+          {% endif %}
+          "
           alt="web development svg"
         />
       </span>
-      <span class="service_name">Web development</span>
+      <span class="service_name">{{service.name}}</span>
     </a>
-    <a href="" class="services">
-      <span class="service_svg">
-        <img
-          class="service_img"
-          src="{% static 'img/no_img.jpg' %}"
-          alt="web development svg"
-        />
-      </span>
-      <span class="service_name">Web development</span>
-    </a>
-    <a href="" class="services">
-      <span class="service_svg">
-        <img
-          class="service_img"
-          src="{% static 'img/no_img.jpg' %}"
-          alt="web development svg"
-        />
-      </span>
-      <span class="service_name">Web development</span>
-    </a>
-    <a href="" class="services">
-      <span class="service_svg">
-        <img
-          class="service_img"
-          src="{% static 'img/no_img.jpg' %}"
-          alt="web development svg"
-        />
-      </span>
-      <span class="service_name">Web development</span>
-    </a>
-
-
-
-    <a href="" class="services">
-      <span class="service_svg">
-        <img
-          class="service_img"
-          src="{% static 'img/no_img.jpg' %}"
-          alt="web development svg"
-        />
-      </span>
-      <span class="service_name">Digital marketing</span>
-    </a>
+{% endfor %}
 
 
   </div>

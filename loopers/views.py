@@ -4,7 +4,8 @@ from .models import Service
 
 
 def home_page(request):
-    return render(request, 'loopers/home_page.html', {})
+    services = Service.objects.all()
+    return render(request, 'loopers/home_page.html', {'services':services})
 
 def service(request):
     services = Service.objects.all()
