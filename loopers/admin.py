@@ -1,3 +1,27 @@
 from django.contrib import admin
+from .models import Service, ServiceOffer, SubService
 
 # Register your models here.
+
+class ServiceOfferInline(admin.TabularInline):
+    model = ServiceOffer
+    extra = 0
+
+@admin.register(SubService)
+class SubServiceAdmin(admin.ModelAdmin):
+    list_display = ['name', 'description']
+    prepopulated_fields = {'slug': ('name',)}
+    list_filter = ['service',]
+
+
+class SubServiceInline(admin.StackedInline):
+    model = SubService
+    extra = 0
+
+
+@admin.register(Service)
+class ServiceAdmin(admin.ModelAdmin):
+    list_display = ['name' ,'description', 'order']
+    list_editable = ['order']
+    prepopulated_fields = {'slug': ('name',)}
+    inlines = [ServiceOfferInline, SubServiceInline]
