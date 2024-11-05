@@ -10,7 +10,7 @@
 <div class="service_box">
 
 {% for service in services %}
-    <a href="" class="services">
+    <a href="{{service.get_absolute_url}}" class="services">
       <span class="service_svg">
         <img
           class="service_img"
@@ -30,8 +30,10 @@
 
 
   </div>
+
+  
   <div class="all_services">
-    <a class="all_service_link" href="#">
+    <a class="all_service_link" href="{% url 'service_page' %}">
       <span class="all_service_name"> Check out our all services</span></a
     >
   </div>

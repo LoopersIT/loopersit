@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from django.urls import reverse
 
 
 #service and subservice models----------------------------------------------
@@ -17,6 +18,9 @@ class Service(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse('sub_service', args=[self.slug])
 
 
 class ServiceOffer(models.Model):
