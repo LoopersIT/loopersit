@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Service
 
 
 
@@ -6,7 +7,8 @@ def home_page(request):
     return render(request, 'loopers/home_page.html', {})
 
 def service(request):
-    return render(request, 'loopers/service.html', {'active': 'service'})
+    services = Service.objects.all()
+    return render(request, 'loopers/service.html', {'active': 'service', 'services':services})
 
 def sub_service(request):
     return render(request, 'loopers/sub_service.html', {'active': 'service'})

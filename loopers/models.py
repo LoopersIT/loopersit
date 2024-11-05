@@ -33,8 +33,7 @@ class ServiceOffer(models.Model):
 class SubService(models.Model):
     service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name='subservices')
     name = models.CharField(max_length=250)
-    slug = models.SlugField(blank=True, unique=True, 
-                            help_text='if does not fill automatically, keep blank')
+    slug = models.SlugField(blank=True, help_text='if does not fill automatically, leave blank')
     description = models.TextField()
     image = models.ImageField(upload_to='service/%Y/%m', blank=True)
     order = models.PositiveIntegerField(default=1)
