@@ -74,7 +74,7 @@
   }
   
   .hide_nav {
-    margin-right: -150px;
+    display: none;
   }
   
   @media screen and (min-width: 1080px) {
@@ -113,6 +113,6 @@
       display: none;
     }
     .hide_nav {
-      margin-right: 0px;
+      display: block;
     }
   }
