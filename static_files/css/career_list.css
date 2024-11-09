@@ -123,6 +123,16 @@
     font-size: 1rem;
   }
 }
+
+.job-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+ margin: 1rem;
+}
+
+
 @media screen and (min-width: 600px) {
   .career_header_img {
     width: 10rem;

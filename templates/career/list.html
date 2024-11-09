@@ -44,23 +44,26 @@
         <span class="second_cat">Roles</span>
       </div>
 
-
-
-
-  
+      
+      {% for job in jobs %}
       <div class="position_list_wrapper">
-        <span class="position_name">UI/UX designer</span>
+        <span class="position_name">{{job.title}}</span>
         <div class="position_list">
           <span class="role_desc"
-            >Ideal candidates should have experience in both web and mobile
-            design, with a strong understanding of responsive design
-            principles</span
+            >{{job.short_info}}</span
           >
-          <span class="role_deadline">Deadline: 5th August</span>
-          <a class="apply_link" href="">Details</a>
+          <span class="role_deadline">Deadline: {{job.deadline}}</span>
+          <div class="job-btn-container">
+            <a class="apply_link" href="{{job.get_absolute_url}}">Details</a>
+            <a class="apply_link" href="{{job.get_absolute_url}}">Apply</a>
+          </div>
         </div>
       </div>
-
+      {% empty %}
+        <div class="empty-job">
+          <h2>No job available yet</h2>
+        </div>
+      {% endfor %}
 
 {% endblock main %}
     

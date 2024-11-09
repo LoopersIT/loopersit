@@ -1,5 +1,6 @@
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
+from django.urls import reverse
 from .validators import validate_file_size
 
 
@@ -31,6 +32,9 @@ class Job(models.Model):
     class Meta:
         ordering = ['order', 'deadline']
         indexes = [models.Index(fields=['order'])]
+    
+    def get_absolute_url(self):
+        return reverse('career_detail', args=[self.slug])
    
     def __str__(self):
         return self.title
