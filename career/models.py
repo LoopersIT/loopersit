@@ -5,15 +5,15 @@ from .validators import validate_file_size
 
 
 JOB_TYPE_CHOICES = (
-    ('full_time', 'Full-time'),
-    ('part_time', 'Part-time'),
+    ('Full-time', 'Full-time'),
+    ('Part-time', 'Part-time'),
 
 )
 
 JOB_MODE_CHOICES = (
-    ('on_site', 'On-site'),
-    ('remote', 'Remote'),
-    ('hybrid', 'Hybrid'),
+    ('On-site', 'On-site'),
+    ('Remote', 'Remote'),
+    ('Hybrid', 'Hybrid'),
 
 )
 

@@ -53,9 +53,10 @@
             >{{job.short_info}}</span
           >
           <span class="role_deadline">Deadline: {{job.deadline}}</span>
+          <span class="role_deadline">Job type: {{job.job_type}}, {{job.job_mode}} </span>
           <div class="job-btn-container">
             <a class="apply_link" href="{{job.get_absolute_url}}">Details</a>
-            <a class="apply_link" href="{{job.get_absolute_url}}">Apply</a>
+            <a class="apply_link" href="#">Apply</a>
           </div>
         </div>
       </div>

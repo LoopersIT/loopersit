@@ -20,8 +20,7 @@
 
 /*-----job responsibility --------*/
 .job_description {
-  display: flex;
-  justify-content: center;
+  margin: 2rem;
 }
 .overview_card {
   display: flex;
@@ -48,6 +47,20 @@
 }
 .responsibility_desc {
   font-size: 0.8rem;
+}
+
+.job-apply-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--prime_col);
+  color: white;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+}
+
+.job-apply-btn:hover {
+  background-color: var(--secondary_col);
 }
 
 @media screen and (min-width: 769px) {
