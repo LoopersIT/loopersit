@@ -24,4 +24,4 @@ def apply_for_job(request):
 
 
 def application_success(request):
-    return render(request, 'career/success.html',{'active': 'career'})
+    return render(request, 'success.html',{'active': 'career'})

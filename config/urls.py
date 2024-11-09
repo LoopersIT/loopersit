@@ -8,6 +8,7 @@ urlpatterns = [
     path('', include('loopers.urls')),
     path('career/', include('career.urls')),
     path('blog/', include('blog.urls')),
+    path('about/', include('about.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 

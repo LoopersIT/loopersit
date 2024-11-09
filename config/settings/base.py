@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'taggit',
 
     #local apps
+    'about',
     'loopers',
     'blog',
     'career',

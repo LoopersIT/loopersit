@@ -16,14 +16,12 @@
 <div class="contact-container">
     <h1 class="contact-title">We'd love to hear from you</h1>
     <div class="contact-form">
-        <form action="">
-            <div class="name">
-                <input type="text" id="first_name" name="first_name" placeholder="First name">
-                <input type="text" id="last_name" name="last_name" placeholder="Last name">
+        <form  method="post" class="contact-form">
+            {{contact_form}}
+            <div class="contact-submit-btn-container">
+                <button type="submit">Submit</button>
             </div>
-            <input type="text" id="email" name="email" placeholder="your mail">
-            <input type="text" id="body" name="body" placeholder="your message">
-            <button type="submit">Submit</button>
+            {% csrf_token %}
         </form>
     </div>
 </div>

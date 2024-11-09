@@ -27,6 +27,5 @@ def reviews(request):
 def about_us(request):
     return render(request, 'loopers/about_us.html', {'active':'about'})
 
-def contact_us(request):
-    return render(request, 'loopers/contact_us.html', {'active': 'contact'})
+
 
