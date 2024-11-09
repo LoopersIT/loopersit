@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Service, ServiceOffer, SubService
+from .models import Service, ServiceOffer, SubService, Review
 
 # Register your models here.
 
@@ -25,3 +25,8 @@ class ServiceAdmin(admin.ModelAdmin):
     list_editable = ['order']
     prepopulated_fields = {'slug': ('name',)}
     inlines = [ServiceOfferInline, SubServiceInline]
+
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ['name', 'designation']
+

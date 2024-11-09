@@ -53,3 +53,18 @@ class SubService(models.Model):
         if not self.slug:
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
+
+
+class Review(models.Model):
+    name = models.CharField(max_length=150)
+    designation = models.CharField(max_length=250, blank=True)
+    image = models.ImageField(blank=True,upload_to='review/%Y/%m' )
+    review = models.TextField()
+    order = models.PositiveIntegerField(default=1)
+
+    class Meta:
+        ordering = ['order']
+        indexes = [models.Index(fields=['order'])]
+   
+    def __str__(self):
+        return self.name

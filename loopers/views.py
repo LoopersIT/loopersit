@@ -1,11 +1,14 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Service
+from .models import Service, Review
 
 
 
 def home_page(request):
     services = Service.objects.all()
-    return render(request, 'loopers/home_page.html', {'services':services})
+    reviews = Review.objects.all()[:3]
+    return render(request, 'loopers/home_page.html', {
+        'services':services,
+        'reviews': reviews,})
 
 def service(request):
     services = Service.objects.all()
@@ -16,11 +19,14 @@ def sub_service(request, slug):
     return render(request, 'loopers/sub_service.html', {'active': 'service', 'service':service})
 
 
+def reviews(request):
+    reviews = Review.objects.all()
+    return render(request, 'loopers/reviews.html', {'active':'review', 'reviews':reviews})
+
+
 def about_us(request):
     return render(request, 'loopers/about_us.html', {'active':'about'})
 
 def contact_us(request):
     return render(request, 'loopers/contact_us.html', {'active': 'contact'})
 
-def reviews(request):
-    return render(request, 'loopers/reviews.html', {'active':'review'})
