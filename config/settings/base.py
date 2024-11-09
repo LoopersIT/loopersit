@@ -29,12 +29,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #third party apps
+    'ckeditor',
+    'ckeditor_uploader',
+    'taggit',
 
     #local apps
     'loopers',
     'blog',
     'career',
 ]
+
+CKEDITOR_UPLOAD_PATH = "ck_uploads/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -110,9 +115,99 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+CKEDITOR_IMAGE_BACKEND = 'pillow'
+TAGGIT_CASE_INSENSITIVE = True
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'skin': 'moono',
+        # 'skin': 'office2013',
+        'toolbar_Basic': [
+            ['Source', '-', 'Bold', 'Italic']
+        ],
+        'toolbar_YourCustomToolbarConfig': [
+            {'name': 'document', 'items': [
+                'Source', '-', 'Save', 'NewPage', 'Print', '-', 'Templates']},
+            {'name': 'clipboard', 'items': [
+                'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo']},
+            {'name': 'editing', 'items': [
+                'Find', 'Replace', '-', 'SelectAll']},
+            {'name': 'forms',
+             'items': ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton',
+                       'HiddenField']},
+            {'name': 'links', 'items': ['Link', 'Unlink', 'Anchor']},
+            {'name': 'tools', 'items': ['ShowBlocks', ]},
+            {'name': 'yourcustomtools', 'items': [
+                # put the name of your editor.ui.addButton here
+                'Preview',
+                'Maximize',
+
+            ]},
+            '/',
+            {'name': 'styles', 'items': [
+                'Font', 'FontSize', 'Styles', 'Format']},
+            {'name': 'colors', 'items': ['TextColor', 'BGColor']},
+            {'name': 'basicstyles',
+             'items': ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']},
+            {'name': 'paragraph',
+             'items': ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'NumberedList', 'BulletedList',
+                       '-', 'Outdent', 'Indent', '-' 'Blockquote', 'CreateDiv']},
+            {'name': 'paragraph', 'items': [
+                'BidiLtr', 'BidiRtl', '-', 'Language']},
+
+            {'name': 'insert',
+             'items': ['Image', 'EqnEditor', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe']},
+            '/',
+
+
+            # put this to force next toolbar on new line
+
+        ],
+        'toolbar': 'YourCustomToolbarConfig',  # put selected toolbar config here
+        # 'toolbarGroups': [{ 'name': 'document', 'groups': [ 'mode', 'document', 'doctools' ] }],
+        # 'height': 291,
+        'width': '100%',
+        # 'filebrowserWindowHeight': 725,
+        # 'filebrowserWindowWidth': 940,
+        # 'toolbarCanCollapse': True,
+        # 'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
+        'tabSpaces': 4,
+        'extraPlugins': ','.join([
+            'uploadimage',  # the upload image feature
+            # your extra plugins here
+            'image2',
+            'tableresize',
+            'tableresizerowandcolumn',
+            'eqneditor',
+            'uploadfile',
+            'div',
+            'autolink',
+            'autoembed',
+            'embedsemantic',
+            'autogrow',
+            # 'devtools',
+            'widget',
+            'lineutils',
+            'clipboard',
+            'dialog',
+            'dialogui',
+            'elementspath',
+            'font'
+        ]),
+        'font_names':'Inter/Inter',
+        'font_defaultLabel': 'Inter',            
+        'font_style': {
+            'element': 'span',
+            'styles': {
+                'font-family': 'Inter, Arial, sans-serif',
+            },
+        },
+    }
+}
