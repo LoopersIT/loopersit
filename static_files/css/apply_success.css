@@ -32,19 +32,6 @@
   font-size: 0.8rem;
 }
 
-/* .career_button_link {
-  text-decoration: none;
-  color: #000;
-  font-size: 0.5rem;
-  border: 1px solid var(--prime_col);
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-}
-.career_button_link:hover {
-  background-color: var(--prime_col);
-  border: unset;
-  color: #fff;
-} */
 .career_header_img {
   position: absolute;
   right: 0.8rem;
@@ -55,59 +42,42 @@
   object-fit: cover;
 }
 
-/*----------Open Roles -----------*/
-.position_list_wrapper {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 15px;
-  margin: 1rem 0;
-  /* margin: 1rem 1.875rem; */
-}
-/* .role_divider {
-  border-bottom: 1px solid blue;
-} */
-.position_name {
-  /* display: inline-block; */
-  font-size: 1.5rem;
-  font-weight: 500;
-  /* margin-top: 2rem; */
-}
-
-.position_list {
+.apply-form {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   gap: 1rem;
-  padding: 0.7rem;
-  border: 1.5px solid var(--secondary_col);
-  /* margin: 2rem; */
-  margin: 1rem 0;
-  border-radius: 15px;
-  border-left: 1.5rem solid var(--secondary_col);
 }
-.role_desc {
-  font-size: 1rem;
+
+.apply-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.role_deadline {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--secondary_col);
+
+#id_role, #id_name, #id_email, #id_mobile_number, #id_salary_expectation, #id_cv {
+  padding-block: .5rem;
+  border-radius: .5rem;
+  border: 0px;
 }
-.apply_link {
-  /* margin-left: center; */
-  align-self: center;
+
+
+.apply-submit-btn{
+  width: fit-content;
+  margin: 10px auto;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
   background-color: var(--prime_col);
-  border-radius: 0.938rem;
-  padding: .7rem;
-  font-size: 1rem;
-  /* margin: 0.625rem 0 0 0; */
-  text-decoration: none;
-  color: #fff;
+  color: white;
+  border: 0px;
 }
-.apply_link:hover {
-  background-color: #23adad;
-  border: unset;
-  color: #fff;
+
+.apply-submit-btn:hover{
+  background-color: var(--secondary_col);
+  cursor: pointer;
 }
+
+
 
 @media screen and (min-width: 499px) {
   .career_header_img {
@@ -122,14 +92,6 @@
   .role_deadline {
     font-size: 1rem;
   }
-}
-
-.job-btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
- margin: 1rem;
 }
 
 
@@ -161,19 +123,6 @@
     font-size: 1.5rem;
   }
 
-  .position_list_wrapper {
-    padding: 1rem;
-    margin: 1rem 1.875rem;
-  }
-  .position_list {
-    margin: 2rem;
-  }
-  .role_desc {
-    font-size: 1.4rem;
-  }
-  .role_deadline {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (min-width: 1024px) {
   .career_header_titles {
@@ -191,13 +140,7 @@
     right: 3rem;
     top: 3rem;
   }
-  /* .role_desc {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  .role_deadline {
-    font-size: 1.3rem;
-  } */
+
 }
 @media screen and (min-width: 1299px) {
   .career_header_img {

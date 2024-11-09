@@ -45,9 +45,11 @@
       </div>
 
       <div class="">
-        <form method="post" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data" class="apply-form">
           {{form}}
-          <button type="submit">submit</button>
+          <div class="apply-form-btn-container">
+            <button type="submit" class="apply-submit-btn">submit</button>
+          </div>
           {% csrf_token %}
         </form>
       </div>
