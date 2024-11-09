@@ -56,9 +56,17 @@
 }
 
 #id_role, #id_name, #id_email, #id_mobile_number, #id_salary_expectation, #id_cv {
-  padding-block: .5rem;
+  padding: .5rem .5rem;
   border-radius: .5rem;
   border: 0px;
+  font-size: 1rem;
+}
+#id_role:focus, #id_name:focus, #id_email:focus, #id_mobile_number:focus, #id_salary_expectation:focus{
+  outline: none;
+}
+
+#id_cv {
+  background-color: white;
 }
 
 
@@ -121,6 +129,33 @@
   }
   .career_short_title {
     font-size: 1.5rem;
+  }
+
+  .apply-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 2rem;
+    padding: 3rem;
+  }
+
+  .apply-form-btn-container {
+    grid-column: 1 / span 2;
+  }
+
+  .apply-submit-btn{
+    padding: .6rem 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+
+  .category_name {
+    margin-top: 5rem;
+  }
+
+  #id_role, #id_name, #id_email, #id_mobile_number, #id_salary_expectation, #id_cv {
+    padding: .8rem;
+    font-size: 1.1rem;
   }
 
 }

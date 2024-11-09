@@ -20,8 +20,8 @@ def apply_for_job(request):
             return redirect('application_success')
     else:
         form = ApplicationForm()
-    return render(request, 'career/apply.html', {'form': form})
+    return render(request, 'career/apply.html', {'active': 'career', 'form': form})
 
 
 def application_success(request):
-    return render(request, 'career/success.html',{})
+    return render(request, 'career/success.html',{'active': 'career'})
