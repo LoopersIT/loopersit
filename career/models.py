@@ -1,7 +1,6 @@
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.urls import reverse
-from .validators import validate_file_size
 
 
 JOB_TYPE_CHOICES = (
@@ -41,16 +40,16 @@ class Job(models.Model):
 
 
 class Application(models.Model):
-    role = models.CharField(max_length=250, choices=[], blank=False)
+    role = models.ForeignKey(Job, on_delete=models.SET_NULL, related_name='applications', null=True)
     name = models.CharField(max_length=250)
     email = models.EmailField( max_length=100)
     mobile_number = models.CharField(max_length=20)
     salary_expectation = models.CharField(max_length=10)
-    cv = models.FileField(upload_to='cvs/%Y/%m', validators=[validate_file_size])
+    cv = models.FileField(upload_to='cvs/%Y/%m', blank=True)
     created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['-created', ]
+        ordering = ['-created',]
         indexes = [models.Index(fields=['-created'])]
    
     def __str__(self):

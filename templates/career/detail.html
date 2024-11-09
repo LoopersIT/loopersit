@@ -21,7 +21,7 @@
         <span class="job_name">{{job.title}}</span>
         <span class="job_deadline">Deadline: {{job.deadline}}</span>
         <span class="job_deadline">Job type: {{job.job_type}}, {{job.job_mode}}</span>
-        <a href="#" class="job-apply-btn">Apply</a>
+        <a href="{% url 'apply_for_job' %}" class="job-apply-btn">Apply</a>
       </div>
   
       <!--Job responsibility-->

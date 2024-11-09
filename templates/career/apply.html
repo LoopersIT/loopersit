@@ -3,7 +3,7 @@
 
 
 {% block css %}
-    <link rel="stylesheet" href="{% static 'css/career_list.css' %}">
+    <link rel="stylesheet" href="{% static 'css/apply_success.css' %}">
 {% endblock css %}
 
 
@@ -40,31 +40,20 @@
   
       <!--------------Open Roles---------->
       <div class="category_name">
-        <span class="first_cat">Open</span>
+        <span class="first_cat">Apply for the</span>
         <span class="second_cat">Roles</span>
       </div>
 
-      
-      {% for job in jobs %}
-      <div class="position_list_wrapper">
-        <span class="position_name">{{job.title}}</span>
-        <div class="position_list">
-          <span class="role_desc"
-            >{{job.short_info}}</span
-          >
-          <span class="role_deadline">Deadline: {{job.deadline}}</span>
-          <span class="role_deadline">Job type: {{job.job_type}}, {{job.job_mode}} </span>
-          <div class="job-btn-container">
-            <a class="apply_link" href="{{job.get_absolute_url}}">Details</a>
-            <a class="apply_link" href="{% url 'apply_for_job' %}">Apply</a>
-          </div>
-        </div>
+      <div class="">
+        <form method="post" enctype="multipart/form-data">
+          {{form}}
+          <button type="submit">submit</button>
+          {% csrf_token %}
+        </form>
       </div>
-      {% empty %}
-        <div class="empty-job">
-          <h2>No job available yet</h2>
-        </div>
-      {% endfor %}
+
+      
+    
 
 {% endblock main %}
     

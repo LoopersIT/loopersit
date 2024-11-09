@@ -12,6 +12,6 @@ class JobAdmin(admin.ModelAdmin):
 
 @admin.register(Application)
 class ApplicaitonAdmin(admin.ModelAdmin):
-    list_display = ['role', 'name', 'email', 'mobile_number']
-    list_filter = ['role']
+    list_display = ['role', 'name', 'email', 'mobile_number', 'cv', 'created']
+    list_filter = ['role', 'created']
 
