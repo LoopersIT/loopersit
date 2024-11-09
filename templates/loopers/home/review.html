@@ -33,6 +33,10 @@
         {{review.review | slice:180}}..
       </div>
     </div>
+    {% empty %}
+    <div class="empty-review">
+      <h2>No Reviews aded yet</h2>
+    </div>
  {% endfor %}
 
 
@@ -40,7 +44,7 @@
 
 
     <div class="review_button">
-      <a class="call_button" href="">see more</a>
+      <a class="call_button" href="{% url 'reviews' %}">see more</a>
     </div>
 
 
