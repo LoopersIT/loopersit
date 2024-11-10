@@ -24,7 +24,8 @@ def reviews(request):
     return render(request, 'loopers/reviews.html', {'active':'review', 'reviews':reviews})
 
 
-
+def schedule(request):
+    return render(request, 'loopers/schedule.html', {'active':'contact'})
 
 
 
