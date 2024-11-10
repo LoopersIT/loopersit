@@ -24,8 +24,7 @@ def reviews(request):
     return render(request, 'loopers/reviews.html', {'active':'review', 'reviews':reviews})
 
 
-def about_us(request):
-    return render(request, 'loopers/about_us.html', {'active':'about'})
+
 
 
 

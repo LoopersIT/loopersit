@@ -16,9 +16,10 @@
 .about_intro_icon {
   width: 8rem;
   height: 8rem;
-  background-color: #fff;
+  background-color: var(--secondary_col);
   border-radius: 50%;
   margin: 0.5rem 0;
+  object-fit: cover;
 }
 .about_tag {
   display: block;
@@ -28,13 +29,13 @@
 }
 
 /* ---------about_nav----------------*/
-.nav_card {
+.about_nav_card {
   background-color: #fff;
   padding: 1rem;
   margin: 1rem 0 0.5rem 0;
 }
 
-.nav_icon {
+.about_nav_icon{
   display: inline-block;
   background-color: var(--secondary_col);
   padding-top: 0.3rem;
@@ -43,66 +44,89 @@
   border-radius: 50%;
   font-size: 1.5rem;
   text-align: center;
+  color: var(--secondary_col);
 }
 
-.nav_icon:hover {
+.about_nav_icon:hover {
   background-color: var(--prime_col);
   color: #fff;
 }
-.nav_name {
+.about_nav_name{
   text-decoration: none;
   color: #000;
   margin-left: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: ;
 }
 
 /* ---------Our portfolio----------------*/
 
-.portfolio_image_span {
-  background-color: #fff;
-  padding: 0.5rem;
-  text-align: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
 
-.project_image {
-  width: 100%;
-}
-.project_name {
+
+/* ----------leading members---------*/
+.top_member_card_list {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
   background-color: var(--secondary_col);
-  padding: 0.7rem;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  color: #fff;
-  /* opacity: 30%; */
-  text-align: center;
-  margin-bottom: 1rem;
+  padding: 1.5rem;
 }
-.our_portfolio_button {
+.top_member_card {
   text-align: center;
-  margin-bottom: 3rem;
+  border-radius: 1.563rem;
+  border: 0.063rem solid #fff;
+  background: linear-gradient(
+    108deg,
+    rgba(255, 255, 255, 0.25) -8.57%,
+    rgba(255, 255, 255, 0.15) 111.32%
+  );
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  /* padding: 2.5rem; */
+  padding: 1rem;
+  margin: 1rem 0.5rem;
 }
-.our_portfolio_link {
-  text-decoration: none;
-  color: #000;
+.top_member_img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  margin-top: -0.5rem;
+  object-fit: cover;
+}
+.top_member_name {
+  display: block;
   font-size: 0.8rem;
-  border: 1px solid var(--prime_col);
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-}
-.our_portfolio_link:hover {
-  background-color: var(--secondary_col);
+  margin: 0.8rem 0.3rem 0.3rem 0.3rem;
   color: #fff;
-  border: unset;
+  font-weight: 500;
+}
+.top_member_position {
+  font-size: 0.7rem;
+  color: #fff;
+}
+.member_link {
+  margin-top: 1rem;
+}
+.member_link_icon {
+  color: var(--secondary_col);
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
-/* -----------Leading members-----------*/
+.bi-linkedin {
+  color: #fff;
+}
+.bi-github {
+  color: #fff;
+}
+.bi-facebook {
+  color: #fff;
+}
+
+/* -----------team members-----------*/
 
 .employee_profile {
   background-color: #fff;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   border-radius: 15px;
   text-align: center;
   margin-top: 5rem;
@@ -119,6 +143,33 @@
   font-weight: 600;
   margin: 0.5rem 0;
 }
+.team_member_link {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.team_member_link_icon {
+  /* background-color: var(--secondary_col); */
+  border-radius: 50%;
+  color: var(--secondary_col);
+  
+  padding: 0.3rem;
+  /* width:2.6rem;
+  height:2.6rem; */
+}
+#team_member_linkedin_id{
+  color:var(--secondary_col);
+  font-size: 1.5rem;
+}
+#team_member_github_id{
+  color:var(--secondary_col);
+  font-size: 1.5rem;
+}
+#team_member_facebook_id{
+  color: var(--secondary_col);
+  font-size: 1.5rem;
+}
 .leading_member_button {
   text-align: center;
   margin-top: 1.5rem;
@@ -131,6 +182,12 @@
 }
 .the_message {
   padding: 0.5rem 1rem;
+}
+.message_img {
+  width: 10rem;
+  height: 10rem;
+  padding: 0.5rem;
+  /* object-fit: cover; */
 }
 
 /*------------Our vision-----------*/
@@ -188,40 +245,27 @@
     gap: 1rem;
     margin: 1rem 1.875rem 0 1.875rem;
   }
-  .nav_card {
+  .about_nav_card {
     width: 50%;
     border-radius: 15px;
   }
 
   /* -------------our portfolio -----------*/
-  .portfolio_section {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 3rem 1.875rem 1rem 1.875rem;
-  }
-  .our_portfolio_link {
-    font-size: 1rem;
-  }
-  .project_image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    /* height: 10rem; */
-    /* margin-top: -3rem; */
-  }
 
-  .project_name {
+  /* ----------top members---------*/
+  .top_member_name {
     font-size: 1.2rem;
-    font-weight: 500;
   }
-
-  /* ----------Leading members---------*/
+  .top_member_position {
+    font-size: 0.8rem;
+  }
+  /* ----------team members---------*/
   .leading_member {
     margin-bottom: 5rem;
   }
   .employee_profile_list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }
@@ -232,11 +276,6 @@
     margin-top: -5rem;
   }
 
-  .horizontal_line {
-    background-color: var(--prime_col);
-    height: 6rem;
-    margin-top: -9rem;
-  }
 
   .leading_member_button {
     margin-top: 4.5rem;
@@ -248,6 +287,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem;
     text-align: left;
     border-radius: 15px;
     margin: 0 1.875rem;
@@ -255,7 +295,8 @@
   .message_img {
     width: 15rem;
     height: 15rem;
-    /* margin-left: 2rem; */
+    padding: 1rem;
+    margin-right: 4rem;
   }
 
   /*---------------our visions-------------*/
@@ -285,10 +326,10 @@
     font-family: 600;
   }
   /* ---------about_nav----------------*/
-  .nav_card {
+  .about_nav_card {
     padding: 1.5rem;
   }
-  .nav_icon {
+  .about_nav_icon {
     padding-top: 0.5rem;
     width: 4rem;
     height: 4rem;
@@ -296,10 +337,20 @@
   }
 
   /* ----------Our portfolio-----------*/
-  .our_portfolio_link {
-    font-size: 1.2rem;
+
+  /* ----------leading members---------*/
+  .top_member_card_list {
+    gap: 1.5rem;
   }
-  /* ----------Leading members---------*/
+  .top_member_card {
+    padding: 2.5rem;
+  }
+  .top_member_img {
+    width: 10rem;
+    height: 10rem;
+    margin-top: -1rem;
+  }
+  /* ----------team members---------*/
   .employee_profile {
     padding: 3rem;
   }
@@ -308,11 +359,7 @@
     height: 12rem;
     margin-top: -8rem;
   }
-  .horizontal_line {
-    background-color: var(--prime_col);
-    height: 7rem;
-    margin-top: -10rem;
-  }
+
 
   /*-------------Our visions---------------*/
   .subtract {
@@ -346,14 +393,12 @@
   }
 
   /* ---------about_nav----------------*/
-  .nav_name {
+  .about_nav_name{
     font-size: 1.5rem;
   }
 
   /* ---------our portfolio----------------*/
-  .portfolio_section {
-    gap: 5rem;
-  }
+
 
   /* ----------Leading members---------*/
   .employee_profile {
@@ -368,11 +413,7 @@
     margin-top: 2rem;
   }
 
-  .horizontal_line {
-    background-color: var(--prime_col);
-    height: 8.5rem;
-    margin-top: -13rem;
-  }
+ 
   .leading_member_button {
     margin-top: 6rem;
   }

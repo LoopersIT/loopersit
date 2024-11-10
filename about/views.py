@@ -7,6 +7,10 @@ from .forms import ContactForm
 from .models import FAQ
 
 # Create your views here.
+
+def about_us(request):
+    return render(request, 'about/about_us.html', {'active':'about'})
+
 class ContactView(View):
     def get(self, request):
         contact_form = ContactForm()
