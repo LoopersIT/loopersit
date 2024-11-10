@@ -91,7 +91,7 @@
   border-radius: 15px;
 }
 .portfolio_project_img_wrapper {
-  border: 1.5px solid var(--secondary_col);
+  border: 3px solid var(--secondary_col);
   border-radius: 15px;
   /* height: 100%; */
   /* width: 100%; */

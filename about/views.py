@@ -4,7 +4,7 @@ from django.views import View
 from django.core.mail import send_mail, BadHeaderError
 from config.settings.pro import EMAIL_HOST_USER
 from .forms import ContactForm
-from .models import FAQ, Member
+from .models import FAQ, Member, Portfolio, ProjectSummary
 
 # Create your views here.
 
@@ -16,8 +16,15 @@ def about_us(request):
         'leaders':leaders,
         'members':members})
 
+
 def portfolio(request):
-    return render(request, 'about/portfolio.html', {'active': 'portfolio'})
+    portfolios = Portfolio.objects.all()
+    summaries = ProjectSummary.objects.all()
+    return render(request, 'about/portfolio.html', {
+        'active': 'portfolio',
+        'portfolios': portfolios,
+        'summaries':summaries})
+
 
 class ContactView(View):
     def get(self, request):
