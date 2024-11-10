@@ -3,13 +3,15 @@
 .footer_background {
   background-color: var(--prime_col);
   padding: 1rem 0.5rem 0rem 0.4rem;
+  /* margin: -2rem; */
 }
 .brand_slogan {
-  display: inline-block;
+  display: block;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 1rem 0 3.1rem 1rem;
+  margin: 0.2rem 0 3.3rem 1rem;
+  text-align: center;
 }
 .footer_icon {
   display: flex;
@@ -30,21 +32,27 @@
   width: min-content;
   border-radius: 50%;
   font-size: 1.3rem;
+  color: var(--prime_col);
+}
+.footer_icon_link:hover {
+  background-color: var(--secondary_col);
+  color: #fff;
 }
 
 /* nav items */
-.nav_items {
+.footer_nav_items {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
-.nav_items_list {
+.footer_nav_items_list {
   list-style: none;
   margin: 0.2rem;
 }
-.nav_items_link {
+.footer_nav_items_link {
   font-size: 0.8rem;
   text-decoration: none;
   color: #fff;
@@ -52,51 +60,65 @@
   margin: 0 0.7rem 1rem 0;
 }
 
+/* --------secondary_link ----------*/
+
 /* --------footer end ----------*/
-.logoLink {
+.footer_logoLink {
   display: flex;
   column-gap: 5px;
   align-items: center;
   text-decoration: none;
   padding: 5px 0 5px 10px;
 }
-
-.logoLetter {
+.footer_logoLetter {
   margin-bottom: 3px;
 }
-.logoLetter_first {
+.footer_logoLetter_first {
   color: #fff;
   font-size: 15px;
 }
-.logoLetter_second {
+.footer_logoLetter_second {
   color: #23adad;
   margin-left: -4px;
   font-size: 15px;
   font-weight: 600;
 }
-
 .footer_end {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 0.4rem;
+  flex-wrap: wrap;
+  /* margin: 2rem 0.4rem; */
 }
-
+.footer_logoLink {
+  width: 50%;
+}
 .credit {
   color: #fff;
   font-size: 15px;
+  width: 50%;
+  text-align: end;
+  margin-bottom: -4.5rem;
+  opacity: 80%;
+}
+.location {
+  color: #fff;
+  font-size: 15px;
+  width: 50%;
+  margin: 0.3rem 0 1rem 0.5rem;
+  opacity: 75%;
 }
 @media screen and (min-width: 769px) {
   .brand_slogan {
     font-size: 1.5rem;
   }
-  .nav_items_link {
+  .footer_nav_items_link {
     font-size: 1rem;
   }
-  .logoLetter_first {
+  .footer_logoLetter_first {
     font-size: 20px;
   }
-  .logoLetter_second {
+  .footer_logoLetter_second {
     font-size: 20px;
   }
 }
@@ -104,7 +126,7 @@
   .brand_slogan {
     font-size: 2rem;
   }
-  .nav_items_link {
+  .footer_nav_items_link {
     font-size: 1.2rem;
   }
 }

@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'css/footer.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     
     {% block css %}
         
@@ -35,7 +35,9 @@
         {% block main %}
 
         {% endblock main %}
-            
+
+        
+       {% include 'footer.html' %}     
     </div>
 
     <!-- script for navbar -->

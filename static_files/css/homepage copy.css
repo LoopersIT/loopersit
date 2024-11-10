@@ -3,11 +3,9 @@
 .background_wave {
   width: 100%;
   height: 13.5rem;
-  /* height: 1%; */
   background-image: url(../img/Vector.svg);
   background-repeat: no-repeat;
   background-position: right;
-  /* background-size: 100%; */
   margin: 0;
 }
 .margin_hack {
@@ -37,8 +35,6 @@
 .intro_img {
   width: 6.875rem;
   height: 6.875rem;
-  /* border-radius: 50%; */
-  object-fit: cover;
 }
 .intro_tag {
   font-size: 1.2rem;
@@ -86,36 +82,58 @@
   border: unset;
   color: #fff;
 }
+/* ---------------Category devider ---------------*/
+/* .category_name {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+}
 
+.category_name .second_cat {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.category_name .second_cat::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: url("/assets/scattered.svg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.first_cat {
+  font-size: 1rem;
+}
+.second_cat {
+  font-size: 1rem;
+  color: #fff;
+} */
 
 /* ------- Our services----------- */
-.gap {
-  margin-top: 6rem;
-}
+
 .services {
   display: flex;
-
   align-items: center;
   gap: 1.2rem;
   background-color: #fff;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 1rem 0.2rem;
   border-radius: 15px;
   border-left: 1.25rem solid #23adad;
   text-decoration: none;
   color: #000;
 }
-.service_svg {
+.service_img {
+  width: 50px;
+  height: 50px;
   background-color: #a7dede;
   border-radius: 50%;
-  padding: 0.875rem 1rem;
-}
-.service_svg:hover {
-  background-color: var(--prime_col);
-}
-.service_img {
-  width: 2.5rem;
-  height: 2.5rem;
+  padding: 1rem;
 }
 .service_name {
   font-size: 1.2rem;
@@ -124,16 +142,18 @@
 .all_services {
   border-radius: 15px;
   background: linear-gradient(
-    90deg,
-    rgba(42, 29, 81, 0.72) 7%,
-    rgba(35, 173, 173, 0.9) 61.11%
-  );
+      90deg,
+      rgba(42, 29, 81, 0.72) 7%,
+      rgba(35, 173, 173, 0.9) 61.11%
+    ),
+    url(/assets/all_services.png);
   padding: 2.5rem;
   margin: 0 0.2rem 1rem 0.2rem;
   color: #fff;
   background-size: cover;
   background-position: center;
   background-blend-mode: normal;
+  text-align: center;
 }
 .all_service_name {
   font-size: 2rem;
@@ -172,9 +192,9 @@
   background-color: #23adad;
   border-radius: 50%;
   text-align: center;
-  padding: 0 0.5rem;
-  width: 5.5rem;
-  height: 5.5rem;
+  padding: 0.5rem;
+  width: 77px;
+  height: 77px;
   position: relative;
 }
 
@@ -193,10 +213,13 @@
   border-left: 4px dotted #23adad;
   height: 6.7rem;
   position: absolute;
-  left: 2.5rem;
+  left: 2.3rem;
   bottom: 4rem;
 }
-
+/* .about_button:nth-child(4) {
+  align-self: flex-start;
+  margin-top: auto;
+} */
 
 /* -----our reviews -----------*/
 
@@ -219,7 +242,7 @@
   color: #000;
 }
 
-.reviewer_image {
+.reviewer_image:first-child {
   /* margin-top: 0.5rem; */
   width: 5.5rem;
   height: 5.5rem;
@@ -229,7 +252,6 @@
   top: -0.5rem;
   /* bottom: -1rem; */
   left: -0.3rem;
-  object-fit: cover;
 }
 .reviewer_details {
   background-color: var(--prime_col);
@@ -289,6 +311,7 @@
   border-radius: 15px;
   width: 6rem;
   height: 6rem;
+  object-fit: cover;
 }
 .blog_titles {
   font-size: 0.9rem;
@@ -304,6 +327,16 @@
   display: none;
 }
 
+/* .author_names {
+  font-size: 0.7rem;
+}
+.author_img {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+} */
+
+/* -------------Estimated price --------------------*/
 .price_card {
   background-color: #2a1d51;
   color: #fff;
@@ -315,15 +348,17 @@
   margin-bottom: 1rem;
 }
 .product_name {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .service_price {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin-top: 0.5rem;
 }
-
+.service_price {
+  font-size: 0.8rem;
+}
 .check_icons {
   font-size: 1rem;
 }
@@ -335,6 +370,7 @@
   text-align: center;
 }
 .green_fill_button {
+  /* all: unset; */
   background-color: #23adad;
   border-radius: 0.938rem;
   font-size: 0.8rem;
@@ -374,9 +410,8 @@
     /* padding-bottom: 0.625rem; */
   }
   .intro_img {
-    width: 24rem;
-    height: 24rem;
-    margin: 0.7rem 0.5rem 0 0;
+    width: 25rem;
+    height: 25rem;
   }
   .get_started {
     font-size: 1.2rem;
@@ -384,24 +419,32 @@
   .call_button {
     font-size: 1.2rem;
   }
-
-
-  .gap {
-    margin-top: -1rem;
+  /* .brush {
+    position: relative;
+    margin-left: -170px;
+    margin-bottom: -30px;
+    z-index: -1;
+    width: unset;
+  } */
+  /* .category_name .second_cat {
+    padding: 5px 20px;
   }
+  .first_cat {
+    font-size: 40px;
+  }
+  .second_cat {
+    font-size: 40px;
+  } */
   .service_box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: 2rem;
-    /* margin: 0 0.5rem; */
+    flex-wrap: wrap;
+
+    /* gap: 2rem; */
   }
   .services {
-    width: 48%;
+    width: 45%;
   }
-  /* .service:last-child {
-    text-align: center;
-  } */
   /* -----about us -----------*/
   .about_stats {
     height: 15rem;
@@ -442,15 +485,10 @@
   /* ------------Estimated prices--------------*/
   .estimated_price {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
   }
-  .service_desc {
-    text-align: center;
-  }
 }
-
 @media screen and (min-width: 1024px) {
   .background_wave {
     height: 38rem;
@@ -464,11 +502,8 @@
   .intro_buttons {
     margin-top: 3.5rem;
   }
-  /* .category_name {
+  .category_name {
     margin: 3rem 0 3.2rem 0;
-  } */
-  .gap {
-    margin-top: -9rem;
   }
   .service_box {
     margin: 0 1.875rem;
@@ -519,26 +554,34 @@
     width: 50%;
     min-height: 5rem;
   }
-  .reviewer_image {
+  .reviewer_image:first-child {
     margin: 0;
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 8.5rem;
+    height: 8.5rem;
     position: absolute;
-    /* top: -0.7rem; */
-    left: -0.7rem;
+    top: -1.5rem;
+    /* bottom: -1rem; */
+    left: -0.3rem;
   }
+
+  .reviewer_image {
+    object-fit: cover;
+  }
+
+
   .reviewer_details {
     left: 15.8rem;
-    top: -3.2rem;
+    top: -2rem;
+    /* bottom: 2.5rem; */
   }
   .reviewer_name {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   .reviewer_designation {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .review_text {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 1.5rem 0.8rem 0.3rem 9.3rem;
   }
 
@@ -593,7 +636,7 @@
     font-size: 1.5rem;
   }
   .offer_desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .offer_details {
     margin: 0 0 1rem 0;
@@ -603,27 +646,6 @@
   }
   .green_fill_button {
     font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 1340px) {
-  .reviewer_image {
-    top: -0.7rem;
-    left: -0.5rem;
-  }
-  .reviewer_details {
-    left: 15.8rem;
-    top: -3rem;
-    /* bottom: 2.5rem; */
-  }
-  /* .reviewer_name {
-    font-size: 1.2rem;
-  }
-  .reviewer_designation {
-    font-size: 0.8rem;
-  } */
-  .review_text {
-    font-size: 1.1rem;
   }
 }
 
@@ -642,8 +664,8 @@
     margin-right: 2.5rem;
   }
   .intro_img {
-    width: 33rem;
-    height: 33rem;
+    width: 30rem;
+    height: 30rem;
   }
   .intro_paragraph {
     width: 70rem;
@@ -656,9 +678,6 @@
   }
   .call_button {
     font-size: 1.6rem;
-  }
-  .gap {
-    margin-top: -10rem;
   }
   .review_text {
     font-size: 1.3rem;
