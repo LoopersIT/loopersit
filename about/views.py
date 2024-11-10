@@ -4,15 +4,21 @@ from django.views import View
 from django.core.mail import send_mail, BadHeaderError
 from config.settings.pro import EMAIL_HOST_USER
 from .forms import ContactForm
+from .models import FAQ
 
 # Create your views here.
 class ContactView(View):
     def get(self, request):
         contact_form = ContactForm()
-        return render(request, 'about/contact_us.html', {'active': 'contact', 'contact_form':contact_form})
+        faqs = FAQ.objects.all()
+        return render(request, 'about/contact_us.html', {
+            'active': 'contact', 
+            'contact_form':contact_form,
+            'faqs':faqs})
     
     def post(self, request):
         contact_form = ContactForm(request.POST)
+        faqs = FAQ.objects.all()
         if contact_form.is_valid():
             subject = contact_form.cleaned_data['subject']
             body = {
@@ -26,7 +32,10 @@ class ContactView(View):
             except BadHeaderError:
                 return HttpResponse('Inavalid header found')
             return redirect('contact_success')
-        return render(request, 'about/contact_us.html', {'active': 'contact', 'contact_form':contact_form})
+        return render(request, 'about/contact_us.html', {
+            'active': 'contact', 
+            'contact_form':contact_form,
+            'faqs':faqs})
 
 
 

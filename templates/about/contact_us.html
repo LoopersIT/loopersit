@@ -35,28 +35,15 @@
 <div class="faq-container">
     <h1 class="faq-title"> FAQ</h1>
     <div class="faq-list">
+        
+        {% for faq in faqs %}
 
         <div class="faq">
-            <div class="question"> <span> How to order a template </span> <i class="bi bi-caret-down"></i> </div>
-            <div class="answer">Just click contact us and schedule a meeting</div>
-        </div>
-        <div class="faq">
-            <div class="question"> <span> How to order a template </span> <i class="bi bi-caret-down"></i> </div>
-            <div class="answer">Just click contact us and schedule a meeting</div>
-        </div>
-        <div class="faq">
-            <div class="question"> <span> How to order a template </span> <i class="bi bi-caret-down"></i> </div>
-            <div class="answer">Just click contact us and schedule a meeting</div>
-        </div>
-        <div class="faq">
-            <div class="question"> <span> How to order a template </span> <i class="bi bi-caret-down"></i> </div>
-            <div class="answer">Just click contact us and schedule a meeting</div>
-        </div>
-        <div class="faq">
-            <div class="question"> <span> How to order a template </span> <i class="bi bi-caret-down"></i> </div>
-            <div class="answer">Just click contact us and schedule a meeting Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa iure nobis nostrum autem dignissimos vel!</div>
+            <div class="question"> <span> {{faq.question}} </span> <i class="bi bi-caret-down"></i> </div>
+            <div class="answer">{{faq.answer}}</div>
         </div>
 
+        {% endfor %}
     </div>
 </div>
 
