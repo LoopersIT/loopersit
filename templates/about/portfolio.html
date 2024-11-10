@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+{% endblock css %}
+
+
+
+{% block title %}
+    Portfolio
+{% endblock title %}
+
+
+{% block main %}
+    <!--portfolio header-->
+    <div class="portfolio_header">
+        <div class="portfolio_round_div">
+          <img
+            class="portfolio_round_svg"
+            src="{% static 'img/portfolio_round_1.svg' %}"
+            alt=""
+          />
+          <img
+            class="portfolio_round_svg"
+            src="{% static 'img/portfolio_round_2.svg' %}"
+            alt=""
+          />
+        </div>
+        <div class="portfolio_header_details">
+          <h1 class="portfolio_header_title">Our Projects</h1>
+          <p class="portfolio_header_desc">
+            Exceptional Teamwork, Outstanding Results: Our team’s dedication and
+            expertise have driven remarkable achievements this year. We’re excited
+            to build on this success and reach new heights together
+          </p>
+        </div>
+      </div>
+  
+      <!--project summary-->
+      <div class="category_name">
+        <span class="first_cat">Project</span>
+        <span class="second_cat">Summary</span>
+      </div>
+  
+      <div class="project_summary_card_list">
+        <div class="project_summary_card">
+          <span class="portfolio_project_number">50+</span>
+          <span class="portfolio_project_name">Happy client</span>
+        </div>
+        <div class="project_summary_card">
+          <span class="portfolio_project_number">10+</span>
+          <span class="portfolio_project_name">Completed projects</span>
+        </div>
+        <div class="project_summary_card">
+          <span class="portfolio_project_number">5+</span>
+          <span class="portfolio_project_name">years experience</span>
+        </div>
+      </div>
+  
+      <!--project details-->
+      <div class="category_name">
+        <span class="first_cat">Project</span>
+        <span class="second_cat">Details</span>
+      </div>
+  
+      <div class="portfolio_project_card">
+        <div class="portfolio_project_img_wrapper">
+          <img
+            class="portfolio_project_img"
+            src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/352514824_663951665749158_7713133917354002489_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Mtyc07HD7M8Q7kNvgELo8BL&_nc_zt=23&_nc_ht=scontent.fdac24-1.fna&_nc_gid=AaHrIfiugTW-x0n5nwwsHrT&oh=00_AYBlxEUJ4871zpx-sMoh2LAH3F8UM_Ph9tyAAT0JlnEVZQ&oe=67340E58"
+            alt=""
+          />
+        </div>
+        <div class="portfolio_project_details_right">
+          <h1 class="portfolio_project_title">Interactive Portfolio Website</h1>
+          <p class="portfolio_project_desc">
+            Create a visually compelling, interactive portfolio that highlights
+            the client's work, achievements, and services, with custom animations
+            and responsive design for an engaging user experience.
+          </p>
+          <span class="portfolio_time_duration"
+            >Project duration time: 4 months</span
+          >
+          <div class="portfolio_project_button">
+            <a class="portfolio_project_link" href="">Visit the project</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="portfolio_project_card">
+        <div class="portfolio_project_img_wrapper">
+          <img
+            class="portfolio_project_img"
+            src="assets/portfolio_project_img.png"
+            alt=""
+          />
+        </div>
+        <div class="portfolio_project_details_right">
+          <h1 class="portfolio_project_title">Interactive Portfolio Website</h1>
+          <p class="portfolio_project_desc">
+            Create a visually compelling, interactive portfolio that highlights
+            the client's work, achievements, and services, with custom animations
+            and responsive design for an engaging user experience.
+          </p>
+          <span class="portfolio_time_duration"
+            >Project duration time: 4 months</span
+          >
+  
+          <div class="portfolio_project_button">
+            <a class="portfolio_project_link" href="">Visit the project</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="portfolio_project_card">
+        <div class="portfolio_project_img_wrapper">
+          <img
+            class="portfolio_project_img"
+            src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/465456362_487033831031260_1532524018802198073_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vuWLZTnz1qYQ7kNvgGoPH_n&_nc_zt=23&_nc_ht=scontent.fdac24-2.fna&_nc_gid=A1uA4L8IYDQoE7uSk-aAYS4&oh=00_AYDWq0s3FjfJmqQiGvMkRXs7_15n05bwTVxMYTv1RLS5jQ&oe=673404C9"
+            alt=""
+          />
+        </div>
+        <div class="portfolio_project_details_right">
+          <h1 class="portfolio_project_title">Interactive Portfolio Website</h1>
+          <p class="portfolio_project_desc">
+            Create a visually compelling, interactive portfolio that highlights
+            the client's work, achievements, and services, with custom animations
+            and responsive design for an engaging user experience.
+          </p>
+          <span class="portfolio_time_duration"
+            >Project duration time: 4 months</span
+          >
+  
+          <div class="portfolio_project_button">
+            <a class="portfolio_project_link" href="">Visit the project</a>
+          </div>
+        </div>
+      </div> 
+{% endblock main %}
+    

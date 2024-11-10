@@ -16,6 +16,9 @@ def about_us(request):
         'leaders':leaders,
         'members':members})
 
+def portfolio(request):
+    return render(request, 'about/portfolio.html', {'active': 'portfolio'})
+
 class ContactView(View):
     def get(self, request):
         contact_form = ContactForm()
