@@ -217,8 +217,11 @@
     font-size: 1rem;
   }
   .portfolio_project_button {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    margin:3rem 0 0 0;
+    text-align: left;
   }
+ 
 }
 @media screen and (min-width: 1024px) {
   /* portfolio header */

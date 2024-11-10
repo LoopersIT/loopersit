@@ -3,7 +3,7 @@
 .footer_background {
   background-color: var(--prime_col);
   padding: 1rem 0.5rem 0rem 0.4rem;
-  /* margin: -2rem; */
+  margin-top: 6.5rem;
 }
 .brand_slogan {
   display: block;
@@ -26,16 +26,18 @@
 }
 .footer_icon_link {
   text-decoration: none;
-  background-color: #fff;
+  background-color: #07bcbc;
+  
+  
   padding: 0.8rem 0.9rem;
   margin: 1rem;
   width: min-content;
   border-radius: 50%;
   font-size: 1.3rem;
-  color: var(--prime_col);
+  /* color: green; */
 }
 .footer_icon_link:hover {
-  background-color: var(--secondary_col);
+  background-color: #056e6e;
   color: #fff;
 }
 
@@ -58,6 +60,9 @@
   color: #fff;
   opacity: 75%;
   margin: 0 0.7rem 1rem 0;
+}
+.footer_nav_items_link:hover {
+text-decoration:underline;
 }
 
 /* --------secondary_link ----------*/
@@ -107,6 +112,10 @@
   width: 50%;
   margin: 0.3rem 0 1rem 0.5rem;
   opacity: 75%;
+}
+.loopers_mail{
+  text-decoration: none;
+  color:#fff;
 }
 @media screen and (min-width: 769px) {
   .brand_slogan {
