@@ -4,12 +4,17 @@ from django.views import View
 from django.core.mail import send_mail, BadHeaderError
 from config.settings.pro import EMAIL_HOST_USER
 from .forms import ContactForm
-from .models import FAQ
+from .models import FAQ, Member
 
 # Create your views here.
 
 def about_us(request):
-    return render(request, 'about/about_us.html', {'active':'about'})
+    leaders = Member.objects.filter(role='leader')
+    members = Member.objects.filter(role='member')
+    return render(request, 'about/about_us.html', {
+        'active':'about',
+        'leaders':leaders,
+        'members':members})
 
 class ContactView(View):
     def get(self, request):
