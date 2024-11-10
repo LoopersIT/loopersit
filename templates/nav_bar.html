@@ -66,8 +66,8 @@
           <a class="nav_items_link {% if active == 'service' %} active{% endif %}" 
           href="{% url 'service_page' %}"> Services </a>
 
-          <a class="nav_items_link {% if active == 'about' %} active{% endif %}" 
-          href="{% url 'about_us' %}"> About us </a>
+          <a class="nav_items_link {% if active == 'portfolio' %} active{% endif %}" 
+          href="#"> Portfolio </a>
 
           <a class="nav_items_link {% if active == 'review' %} active{% endif %}" 
           href="{% url 'reviews' %}"> Reviews </a>
@@ -77,6 +77,9 @@
 
           <a class="nav_items_link {% if active == 'contact' %} active{% endif %}" 
           href="{% url 'contact_us' %}"> Contact us </a>
+          
+          <a class="nav_items_link {% if active == 'about' %} active{% endif %}" 
+          href="{% url 'about_us' %}"> About us </a>
 
           <a class="nav_items_link {% if active == 'blog' %} active{% endif %}" 
           href="{% url 'blog_list' %}"> Blogs </a>
