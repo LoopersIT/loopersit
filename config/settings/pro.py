@@ -34,8 +34,8 @@ ALLOWED_HOSTS = ['157.230.230.195', 'loopersit.com', 'www.loopersit.com']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'litdb',
-        'USER': 'litdbuser',
+        'NAME': 'loopdb',
+        'USER': 'loopdbuser',
         'PASSWORD': get_secret('PGRESS_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '5432'
