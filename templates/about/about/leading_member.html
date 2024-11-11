@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 
 <div class="category_name">
     <span class="first_cat">leading</span>
@@ -15,7 +16,7 @@
         src="
         
         {% if leader.image %}
-          {{leader.image.url}}
+          {% thumbnail leader.image 300x0 %}
         
         {% else %}
         {% static 'img/no_img.jpg' %}

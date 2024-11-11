@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 
 <!-----------Category devider ---------------------------->
 <div class="category_name">
@@ -16,7 +17,7 @@
           class="service_img"
           src="
           {% if service.home_icon %}
-            {{service.home_icon.url}}
+            {% thumbnail service.home_icon 200x0 %}
           {% else %}
             {% static 'img/no_img.jpg' %}
           {% endif %}

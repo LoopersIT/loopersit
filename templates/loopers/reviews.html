@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load thumbnail %}
 
 
 {% block css %}
@@ -31,7 +32,7 @@
                 <img src="
                 
                 {% if review.image %}
-                    {{review.image.url}}
+                    {% thumbnail review.image 300x0 %}
                 {% else %}
                 {% static 'img/no_img.jpg' %}
                 {% endif %}

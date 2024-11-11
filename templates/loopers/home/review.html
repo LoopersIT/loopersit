@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 <div class="category_name">
     <span class="first_cat">Our</span>
     <span class="second_cat">Reviews</span>
@@ -16,7 +17,7 @@
           src="
           
           {% if review.image %}
-            {{review.image.url}}
+            {% thumbnail review.image 300x0 %}
           {% else %}
             {% static 'img/no_imag.jpg' %}
           {% endif %}

@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 {% if members %}
 
 <div class="category_name">
@@ -16,7 +17,7 @@
       <img class="employee_img" src="
       
       {% if member.image %}
-        {{member.image.url}}
+        {% thumbnail member.image 300x0 %}
       {% else %}
         {% static 'img/no_img.jpg' %}
       {% endif %}
