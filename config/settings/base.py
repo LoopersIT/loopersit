@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #third party apps
+    'easy_thumbnails',
     'ckeditor',
     'ckeditor_uploader',
 
