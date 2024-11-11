@@ -9,9 +9,10 @@ class ServiceOfferInline(admin.TabularInline):
 
 @admin.register(SubService)
 class SubServiceAdmin(admin.ModelAdmin):
-    list_display = ['name', 'description']
+    list_display = ['name', 'service', 'order']
     prepopulated_fields = {'slug': ('name',)}
     list_filter = ['service',]
+    list_editable = ['order']
 
 
 class SubServiceInline(admin.StackedInline):
@@ -28,7 +29,8 @@ class ServiceAdmin(admin.ModelAdmin):
 
 @admin.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
-    list_display = ['name', 'designation']
+    list_display = ['name', 'designation', 'order']
+    list_editable = ['order']
 
 @admin.register(Page)
 class PageAdmin(admin.ModelAdmin):

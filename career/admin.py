@@ -5,8 +5,9 @@ from .models import Job, Application
 
 @admin.register(Job)
 class JobAdmin(admin.ModelAdmin):
-    list_display = ['title', 'deadline']
+    list_display = ['title', 'deadline', 'order']
     prepopulated_fields = {'slug': ('title',)}
+    list_editable = ['order']
 
 
 

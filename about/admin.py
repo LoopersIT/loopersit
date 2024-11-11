@@ -7,8 +7,9 @@ admin.site.register(ProjectSummary)
 
 @admin.register(Member)
 class MemberAdmin(admin.ModelAdmin):
-    list_display = ['name', 'designation']
+    list_display = ['name', 'designation', 'order']
     list_filter = ['role']
+    list_editable = ['order']
 
 
 @admin.register(Portfolio)
