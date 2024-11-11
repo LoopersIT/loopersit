@@ -312,7 +312,8 @@
   color: #fff;
   padding: 2rem;
   border-radius: 15px;
-  margin: 0.625rem;
+  margin: 0.625rem auto;
+  width: 22rem;
 }
 .service_desc {
   margin-bottom: 1rem;
@@ -449,6 +450,9 @@
     justify-content: center;
     gap: 2rem;
   }
+  .price_card{
+    margin: 0.625rem;
+  }
   .service_desc {
     text-align: center;
   }
@@ -527,11 +531,11 @@
     width: 9.5rem;
     height: 9.5rem;
     position: absolute;
-    /* top: -0.7rem; */
+    top: -0.7rem;
     left: -0.7rem;
   }
   .reviewer_details {
-    left: 15.8rem;
+    left: 14.5rem;
     top: -2.6rem;
   }
   .reviewer_name {
@@ -613,7 +617,7 @@
 
 @media screen and (min-width: 1340px) {
   .reviewer_image {
-    top: -0.7rem;
+    top: -1.2rem;
     left: -0.5rem;
   }
   .reviewer_details {
@@ -668,12 +672,12 @@
   .review_text {
     font-size: 1.3rem;
   }
-  .reviewer_image:first-child {
+  .reviewer_image{
     /* margin: 0; */
     width: 9.6rem;
     height: 9.6rem;
     position: absolute;
-    top: -1.2rem;
+    top: -1.3rem;
     /* bottom: -1rem; */
     left: -1rem;
   }

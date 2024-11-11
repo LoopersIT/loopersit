@@ -65,7 +65,7 @@
   border-radius: 15px 15px 0px 0px;
   background: var(--secondary-color-se-3, #7bcdcd);
   box-shadow: 8px 0px 6px 3px rgba(0, 0, 0, 0.25);
-  /* width: 15rem; */
+  width: 15rem;
   padding: 1.5rem;
 }
 .portfolio_project_number {
@@ -180,7 +180,7 @@
 
   /* project summary */
 
-  .project_summary_card {
+  /* .project_summary_card {
     margin-top: -3.5rem;
   }
   .project_summary_card_list {
@@ -194,7 +194,7 @@
       rgba(35, 173, 173, 0.65) 50.5%,
       rgba(42, 29, 81, 0.67) 99%
     );
-  }
+  } */
 
   /*project details */
   .portfolio_project_card {
@@ -224,6 +224,21 @@
  
 }
 @media screen and (min-width: 1024px) {
+  .project_summary_card {
+    margin-top: -3.5rem;
+  }
+  .project_summary_card_list {
+    margin-top: 6rem;
+    gap: 5rem;
+    height: 6rem;
+    border-radius: 15px 15px 0px 0px;
+    background: linear-gradient(
+      90deg,
+      rgba(42, 29, 81, 0.7) 0.55%,
+      rgba(35, 173, 173, 0.65) 50.5%,
+      rgba(42, 29, 81, 0.67) 99%
+    );
+  }
   /* portfolio header */
 
   .portfolio_header_details {

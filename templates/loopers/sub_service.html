@@ -5,6 +5,7 @@
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/sub_service.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sub_service_title.css' %}">
 {% endblock css %}
 
 
@@ -16,12 +17,19 @@
 
 {% block main %}
      <!-----------Category devider ---------------------------->
-     <div class="category_name">
-        <span class="first_cat">{{service.name}}</span>
+     <!-- <div class="category_name">
+        <span class="first_cat">{{service.name}}</span> -->
         <!-- <span class="second_cat">{{service.name}}</span> -->
-      </div>
+      <!-- </div> -->
       <!-- -----------------end of category devider ------------------------ -->
-   
+      <div class="service_header_headline">
+        <h1 class="service_header_title">{{service.name}}</h1>
+        <img
+          class="service_header_line"
+          src="{% static 'img/sub_header_line_final.svg' %}"
+          alt=""
+        />
+      </div>
    
       <div class="sub-service-container">
 
