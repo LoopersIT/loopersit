@@ -21,6 +21,7 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static_files')
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -211,4 +212,40 @@ CKEDITOR_CONFIGS = {
             },
         },
     }
+}
+
+
+JAZZMIN_SETTINGS = {
+    "site_title": "LoopersIT Admin",
+    "site_header": "LoopersIT Admin",
+    "site_brand": "LoopersIT",
+    "site_logo": "favicon/favicon.svg",
+    "login_logo": "favicon/favicon.svg",
+    "site_icon": "favicon/favicon.svg",
+    "welcome_sign": "Welcome to LoopersIT",
+    "copyright": "LoopersIT",
+
+    #search model on the top
+    # "topmenu_links": [{"app": "journal"}, {"app": "editorial"},],
+    "order_with_respect_to": ["loopers", "loopers.Service", "loopers.SubService", 
+                              "about", "career", "career.Job", "auth", ],
+
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        "loopers.Service": "fas fa-mail-bulk",
+        "loopers.SubService": "fas fa-envelope-open-text",
+        "loopers.Page":"far fa-newspaper",
+        "loopers.Pricing": "fas fa-money-check-alt",
+        "loopers.Review":"fas fa-star-half-alt",
+        "about.FAQ": "fas fa-question-circle",
+        "about.Member":"fas fa-user-friends",
+        "about.Portfolio":"fas fa-id-card-alt",
+        "about.ProjectSummary":"fas fa-tasks",
+        "career.Application": "fas fa-file-alt",
+        "career.Job": "fas fa-user-md",
+
+
+    },
 }
