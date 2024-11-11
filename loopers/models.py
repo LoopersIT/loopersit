@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 from django.urls import reverse
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 #service and subservice models----------------------------------------------
@@ -68,3 +69,17 @@ class Review(models.Model):
    
     def __str__(self):
         return self.name
+
+
+
+class Page(models.Model):
+    title = models.CharField(max_length=50)
+    slug = models.SlugField(max_length=50, blank=True)
+    link_on_footer = models.BooleanField(default=False)
+    content = RichTextUploadingField()
+
+    def __str__(self):
+        return self.title
+    
+    def get_absolute_url(self):
+        return reverse('extra_page', args=[self.slug])

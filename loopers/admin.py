@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Service, ServiceOffer, SubService, Review
+from .models import Service, ServiceOffer, SubService, Review, Page
 
 # Register your models here.
 
@@ -30,3 +30,8 @@ class ServiceAdmin(admin.ModelAdmin):
 class ReviewAdmin(admin.ModelAdmin):
     list_display = ['name', 'designation']
 
+@admin.register(Page)
+class PageAdmin(admin.ModelAdmin):
+    list_display = ['title', 'link_on_footer']
+    list_editable = ['link_on_footer']
+    prepopulated_fields = {'slug': ('title',)}

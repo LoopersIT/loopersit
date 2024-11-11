@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Service, Review
+from .models import Service, Review,Page
 from about.models import ProjectSummary
 
 
@@ -30,5 +30,7 @@ def reviews(request):
 def schedule(request):
     return render(request, 'loopers/schedule.html', {'active':'contact'})
 
-
+def extra_page(request, slug):
+    page = get_object_or_404(Page, slug=slug)
+    return render(request, 'loopers/extra_page.html', {'page':page})
 

@@ -2,57 +2,53 @@
   <span class="brand_slogan">Your brand, our efforts</span>
   <ul class="footer_icon">
     <li class="footer_icon_list">
-      <a class="footer_icon_link" href=""><i class="bi bi-facebook"></i></a>
+      <a class="footer_icon_link" href="https://facbook.com/loopersit"><i class="bi bi-facebook"></i></a>
     </li>
     <li class="footer_icon_list">
-      <a class="footer_icon_link" href=""><i class="bi bi-linkedin"></i></a>
+      <a class="footer_icon_link" href="https://www.linkedin.com/company/loopersit/"><i class="bi bi-linkedin"></i></a>
     </li>
     <li class="footer_icon_list">
-      <a class="footer_icon_link" href=""><i class="bi bi-twitter"></i></a>
+      <a class="footer_icon_link" href="https://youtube.com/@loopersit"><i class="bi bi-twitter"></i></a>
     </li>
     <li class="footer_icon_list">
-      <a class="footer_icon_link" href=""><i class="bi bi-youtube"></i></a>
+      <a class="footer_icon_link" href="https://x.com/loopersit"><i class="bi bi-youtube"></i></a>
     </li>
   </ul>
 
   <ul class="footer_nav_items">
     <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Home</a>
+      <a class="footer_nav_items_link" href="{% url 'homepage' %}">Home</a>
     </li>
     <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">About</a>
+      <a class="footer_nav_items_link" href="{% url 'about_us' %}">About</a>
     </li>
     <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Blogs</a>
+      <a class="footer_nav_items_link" href="{% url 'service_page' %}">Services</a>
     </li>
     <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Services</a>
+      <a class="footer_nav_items_link" href="{% url 'contact_us' %}">Contact us</a>
     </li>
     <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Contact us</a>
+      <a class="footer_nav_items_link" href="{% url 'career_list' %}">Careers</a>
     </li>
     <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Careers</a>
+      <a class="footer_nav_items_link" href="{% url 'portfolio' %}">Portfolio</a>
     </li>
-    <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Portfolio</a>
-    </li>
-    <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Terms of use</a>
-    </li>
-    <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">Privacy policy</a>
-    </li>
+  
   </ul>
 
   <!--------------secondary_link------------->
   <ul class="footer_nav_items">
+    
+    {% for page in extra_pages %}
+      
     <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">demo link</a>
+      <a class="footer_nav_items_link" href="{{page.get_absolute_url}}">{{page.title}}</a>
     </li>
-    <li class="footer_nav_items_list">
-      <a class="footer_nav_items_link" href="">demo link</a>
-    </li>
+
+  {% endfor %}
+  
+
   </ul>
   <!--------------footer end------------>
   <div class="footer_end">
