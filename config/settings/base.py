@@ -31,7 +31,6 @@ INSTALLED_APPS = [
     #third party apps
     'ckeditor',
     'ckeditor_uploader',
-    'taggit',
 
     #local apps
     'about',
