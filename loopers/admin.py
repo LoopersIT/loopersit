@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Service, ServiceOffer, SubService, Review, Page
+from .models import Service, ServiceOffer, SubService, Review, Page, Pricing, PriceFeature
 
 # Register your models here.
 
@@ -37,3 +37,13 @@ class PageAdmin(admin.ModelAdmin):
     list_display = ['title', 'link_on_footer']
     list_editable = ['link_on_footer']
     prepopulated_fields = {'slug': ('title',)}
+
+class PriceFeatureInline(admin.TabularInline):
+    model = PriceFeature
+    extra = 0
+
+@admin.register(Pricing)
+class PricingAdmin(admin.ModelAdmin):
+    list_display = ['name', 'price_range', 'order']
+    list_editable = ['order',]
+    inlines = [PriceFeatureInline,]

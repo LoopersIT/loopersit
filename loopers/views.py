@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Service, Review,Page
+from .models import Service, Review,Page, Pricing
 from about.models import ProjectSummary
 
 
@@ -8,10 +8,12 @@ def home_page(request):
     services = Service.objects.all()
     reviews = Review.objects.all()[:3]
     summaries = ProjectSummary.objects.all()
+    pricings = Pricing.objects.all()
     return render(request, 'loopers/home_page.html', {
         'services':services,
         'reviews': reviews,
-        'summaries': summaries})
+        'summaries': summaries,
+        'pricings':pricings})
 
 def service(request):
     services = Service.objects.all()

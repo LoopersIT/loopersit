@@ -6,104 +6,41 @@
   <div class="estimated_price">
 
 
-    <div class="price_card">
-      <div class="service_desc">
-        <span class="product_name">UI/UX designer</span>
-        <span class="service_price">$1000-$8000</span>
-      </div>
-
-      <div class="offer_list">
-        <div class="offer_details">
-          <span class="check_icons"
-            ><i class="bi bi-check2-circle"></i
-          ></span>
-          <span class="offer_desc">User-centered designs</span>
-        </div>
-        <div class="offer_details">
-          <span class="check_icons">
-            <i class="bi bi-check2-circle"></i
-          ></span>
-          <span class="offer_desc">User research and testing</span>
-        </div>
-        <div class="offer_details">
-          <span class="check_icons">
-            <i class="bi bi-check2-circle"></i>
-          </span>
-          <span class="offer_desc">Updated with design trends</span>
-        </div>
-      </div>
-      <div class="price_button">
-        <a href="" class="green_fill_button">Contact us</a>
-      </div>
-    </div>
-
-
-
-
-    <div class="price_card">
-      <div class="service_desc">
-        <span class="product_name">Branding</span>
-        <span class="service_price">$1000-$8000</span>
-      </div>
-
-      <div class="offer_list">
-        <div class="offer_details">
-          <span class="check_icons"
-            ><i class="bi bi-check2-circle"></i
-          ></span>
-          <span class="offer_desc">User-centered designs</span>
-        </div>
-        <div class="offer_details">
-          <span class="check_icons">
-            <i class="bi bi-check2-circle"></i
-          ></span>
-          <span class="offer_desc">User research and testing</span>
-        </div>
-        <div class="offer_details">
-          <span class="check_icons">
-            <i class="bi bi-check2-circle"></i>
-          </span>
-          <span class="offer_desc">Updated with design trends</span>
-        </div>
-      </div>
-      <div class="price_button">
-        <a href="" class="green_fill_button">Contact us</a>
-      </div>
-    </div>
-
+{% for pricing in pricings %}
+  
+  {% with pricing.features.all as features %}
     
-
-
+  
+    
+  
     <div class="price_card">
       <div class="service_desc">
-        <span class="product_name">Branding</span>
-        <span class="service_price">$1000-$8000</span>
+        <span class="product_name">{{pricing.name}}</span>
+        <span class="service_price">{{pricing.price_range}}</span>
       </div>
 
       <div class="offer_list">
+        
+        {% for feature in features %}
+
         <div class="offer_details">
           <span class="check_icons"
             ><i class="bi bi-check2-circle"></i
           ></span>
-          <span class="offer_desc">User-centered designs</span>
+          <span class="offer_desc">{{feature.feature}}</span>
         </div>
-        <div class="offer_details">
-          <span class="check_icons">
-            <i class="bi bi-check2-circle"></i
-          ></span>
-          <span class="offer_desc">User research and testing</span>
-        </div>
-        <div class="offer_details">
-          <span class="check_icons">
-            <i class="bi bi-check2-circle"></i>
-          </span>
-          <span class="offer_desc">Updated with design trends</span>
-        </div>
+
+        {% endfor %}
+
       </div>
+
+
       <div class="price_button">
-        <a href="" class="green_fill_button">Contact us</a>
+        <a href="{% url 'contact_us' %}" class="green_fill_button">Contact us</a>
       </div>
     </div>
 
+    {% endwith %}
+    {% endfor %}
 
   </div>
