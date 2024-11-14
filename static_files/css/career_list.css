@@ -5,18 +5,22 @@
   position: relative;
   margin-bottom: 3rem;
 }
+
 .career_header {
   background: rgba(35, 173, 173, 0.3);
   height: 33vw;
 }
+
 .career_header_intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .career_header_subtract {
   width: 40%;
 }
+
 .career_header_details {
   display: flex;
   flex-direction: column;
@@ -28,6 +32,7 @@
   font-size: 0.8rem;
   font-weight: 600;
 }
+
 .career_short_title {
   font-size: 0.8rem;
 }
@@ -63,6 +68,7 @@
   margin: 1rem 0;
   /* margin: 1rem 1.875rem; */
 }
+
 /* .role_divider {
   border-bottom: 1px solid blue;
 } */
@@ -84,14 +90,17 @@
   border-radius: 15px;
   border-left: 1.5rem solid var(--secondary_col);
 }
+
 .role_desc {
   font-size: 1rem;
 }
+
 .role_deadline {
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--secondary_col);
 }
+
 .apply_link {
   /* margin-left: center; */
   align-self: center;
@@ -103,6 +112,7 @@
   text-decoration: none;
   color: #fff;
 }
+
 .apply_link:hover {
   background-color: #23adad;
   border: unset;
@@ -116,9 +126,11 @@
     right: 2rem;
     top: 2rem;
   }
+
   .role_desc {
     font-size: 1.2rem;
   }
+
   .role_deadline {
     font-size: 1rem;
   }
@@ -129,7 +141,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
- margin: 1rem;
+  margin: 1rem;
 }
 
 
@@ -146,17 +158,21 @@
   .career_header_titles {
     font-size: 1.8rem;
   }
+
   .career_header_details {
     gap: 0.5rem;
   }
+
   .career_button_link {
     font-size: 1rem;
   }
+
   .career_header_img {
     width: 17rem;
     height: 12rem;
     right: 2rem;
   }
+
   .career_short_title {
     font-size: 1.5rem;
   }
@@ -165,32 +181,40 @@
     padding: 1rem;
     margin: 1rem 1.875rem;
   }
+
   .position_list {
     margin: 2rem;
   }
+
   .role_desc {
     font-size: 1.4rem;
   }
+
   .role_deadline {
     font-size: 1.2rem;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .career_header_titles {
     font-size: 3.8rem;
   }
+
   .career_button_link {
     font-size: 1.5rem;
   }
+
   .career_header_details {
     gap: 1rem;
   }
+
   .career_header_img {
     width: 18rem;
     height: 15rem;
     right: 3rem;
     top: 3rem;
   }
+
   /* .role_desc {
     font-size: 1.5rem;
     font-weight: 600;
@@ -199,24 +223,29 @@
     font-size: 1.3rem;
   } */
 }
+
 @media screen and (min-width: 1299px) {
   .career_header_img {
     width: 21rem;
     height: 16rem;
   }
+
   .career_header_img {
     right: 3rem;
     top: 4rem;
   }
 }
+
 @media screen and (min-width: 1540px) {
   .career_header_titles {
     font-size: 4.8rem;
   }
+
   .career_header_img {
     width: 35rem;
     height: 23rem;
   }
+
   .career_header_img {
     right: 2.5rem;
     top: 3.5rem;
