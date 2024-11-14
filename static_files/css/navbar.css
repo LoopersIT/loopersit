@@ -116,6 +116,7 @@
   .nav_items_link:hover {
     background-color: #23adad44;
     border-radius: 15px;
+    text-decoration: none;
     /* color: #fff; */
     /* border-bottom: 1px solid #fff; */
   }

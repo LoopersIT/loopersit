@@ -23,7 +23,7 @@
 
 .about_tag {
   display: block;
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: #fff;
   margin: 0 0.5rem;
 }
@@ -56,6 +56,7 @@
   text-decoration: none;
   color: #000;
   margin-left: 0.5rem;
+  font-size: 1rem;
 }
 
 /* ---------Our portfolio----------------*/
@@ -240,9 +241,8 @@
 .vision_details {
   width: 9rem;
   font-size: 0.7rem;
-  /* margin-top: -7rem; */
   color: #fff;
-  left: 2rem;
+  left: 1.8rem;
   position: absolute;
 }
 
@@ -282,6 +282,10 @@
   .about_nav_card {
     width: 50%;
     border-radius: 15px;
+  }
+
+  .about_nav_name {
+    font-size: 1.2rem;
   }
 
   /* -------------our portfolio -----------*/
