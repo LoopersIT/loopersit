@@ -10,14 +10,16 @@
   /* background-size: 100%; */
   margin: 0;
 }
+
 .margin_hack {
   padding: 0.3rem;
 }
+
 /* ------- intro header----------- */
 .intro_card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   row-gap: 0.063rem;
   /* width: auto; */
   /* height: 250px; */
@@ -25,37 +27,40 @@
 
   border-radius: 1.563rem;
   border: 0.063rem solid #fff;
-  background: linear-gradient(
-    108deg,
-    rgba(255, 255, 255, 0.25) -8.57%,
-    rgba(255, 255, 255, 0.15) 111.32%
-  );
+  background: linear-gradient(108deg,
+      rgba(255, 255, 255, 0.25) -8.57%,
+      rgba(255, 255, 255, 0.15) 111.32%);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   padding-bottom: 1rem;
 }
+
 .intro_img {
-  width: 40%;
-  height: 40%;
+  width: 15rem;
+  /* height: 9rem; */
   /* border-radius: 50%; */
   object-fit: cover;
 }
+
 .intro_tag {
   font-size: 1.4rem;
   text-align: center;
   margin: 0.5rem 0 0 0;
   font-weight: 600;
 }
+
 .intro_details {
   margin: 0.5rem 0.5rem;
   text-align: center;
   font-size: 1rem;
 }
+
 .intro_buttons {
   text-align: center;
   padding-bottom: 0.625rem;
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
 }
+
 .get_started {
   /* all: unset; */
   background-color: #2a1d51;
@@ -71,6 +76,7 @@
   border: unset;
   color: #fff;
 }
+
 .call_button {
   /* all: unset; */
   border: 1px solid #2a1d51;
@@ -81,6 +87,7 @@
   text-decoration: none;
   color: #000;
 }
+
 .call_button:hover {
   background-color: #23adad;
   border: unset;
@@ -90,8 +97,16 @@
 
 /* ------- Our services----------- */
 .gap {
-  margin-top: 9.5rem;
+  margin-top: 17rem;
 }
+
+.service_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
 .services {
   display: flex;
 
@@ -99,35 +114,38 @@
   gap: 1.2rem;
   background-color: #fff;
   padding: 1rem;
-  margin: 1rem 0;
+  /* margin: 1rem 0.5rem; */
   border-radius: 15px;
   border-left: 1.25rem solid #23adad;
   text-decoration: none;
   color: #000;
 }
+
 .service_svg {
   background-color: #a7dede;
   border-radius: 50%;
   padding: 0.875rem 1rem;
 }
+
 .service_svg:hover {
   background-color: var(--prime_col);
 }
+
 .service_img {
   width: 2.5rem;
   height: 2.5rem;
 }
+
 .service_name {
   font-size: 1.2rem;
   /* margin: 1.8rem 0 0 1rem; */
 }
+
 .all_services {
   border-radius: 15px;
-  background: linear-gradient(
-    90deg,
-    rgba(42, 29, 81, 0.72) 7%,
-    rgba(35, 173, 173, 0.9) 61.11%
-  );
+  background: linear-gradient(90deg,
+      rgba(42, 29, 81, 0.72) 7%,
+      rgba(35, 173, 173, 0.9) 61.11%);
   padding: 2.5rem;
   margin: 0 0.2rem 1rem 0.2rem;
   color: #fff;
@@ -135,9 +153,11 @@
   background-position: center;
   background-blend-mode: normal;
 }
+
 .all_service_name {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
+
 .all_service_link {
   text-decoration: none;
   color: #fff;
@@ -151,6 +171,7 @@
   border-radius: 15px;
   margin: 0.625rem;
 }
+
 .about_button {
   text-align: center;
   margin-top: 2rem;
@@ -184,6 +205,7 @@
   margin-top: 1rem;
   color: #fff;
 }
+
 .stats_details {
   font-size: 0.5rem;
   color: #fff;
@@ -231,6 +253,7 @@
   left: -0.3rem;
   object-fit: cover;
 }
+
 .reviewer_details {
   background-color: var(--prime_col);
   text-align: center;
@@ -243,18 +266,22 @@
   top: -1rem;
   /* bottom: 2.5rem; */
 }
+
 .reviewer_name {
   font-size: 0.563rem;
   margin: 0;
 }
+
 .reviewer_designation {
   font-size: 0.375rem;
-  margin:0.3rem;
+  margin: 0.3rem;
 }
+
 .review_text {
   font-size: 0.5rem;
   margin: 1.5rem 0.8rem 0.3rem 5.5rem;
 }
+
 .review_button {
   margin-top: 3.5rem;
   text-align: center;
@@ -287,12 +314,14 @@
   text-decoration: none;
   color: #000;
 }
+
 .blog_image {
   border-radius: 15px;
   width: 6rem;
   height: 6rem;
   object-fit: cover;
 }
+
 .blog_titles {
   font-size: 0.9rem;
 }
@@ -303,6 +332,7 @@
   font-size: 0.7rem;
   opacity: 80%;
 }
+
 .blog_sidebar {
   display: none;
 }
@@ -315,13 +345,16 @@
   margin: 0.625rem auto;
   width: 22rem;
 }
+
 .service_desc {
   margin-bottom: 1rem;
 }
+
 .product_name {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 .service_price {
   display: block;
   font-size: 1.1rem;
@@ -331,13 +364,16 @@
 .check_icons {
   font-size: 1rem;
 }
+
 .offer_desc {
   font-size: 0.8rem;
 }
+
 .price_button {
   margin: 2rem 0 1rem 0;
   text-align: center;
 }
+
 .green_fill_button {
   background-color: #23adad;
   border-radius: 0.938rem;
@@ -346,49 +382,60 @@
   text-decoration: none;
   color: #fff;
 }
+
 .green_fill_button:hover {
   background-color: #fff;
   /* border: unset; */
   color: #000;
 }
+
 @media screen and (min-width: 769px) {
   .background_wave {
     height: 30rem;
   }
+
   .margin_hack {
     padding: 0.625rem;
   }
+
   .intro_card {
     flex-direction: row-reverse;
     align-items: unset;
     justify-content: space-between;
     margin: 0 1.5rem;
   }
+
   .intro_paragraph {
     margin: 2rem 0 0 2rem;
   }
+
   .intro_tag {
     font-size: 1.2rem;
     text-align: unset;
     font-size: 2.3rem;
   }
+
   .intro_details {
     margin: 0.625rem 0 2rem 0;
     text-align: unset;
     font-size: 1.2rem;
   }
+
   .intro_buttons {
     text-align: unset;
     /* padding-bottom: 0.625rem; */
   }
+
   .intro_img {
     width: 24rem;
     height: 24rem;
     margin: 0.7rem 0.5rem 0 0;
   }
+
   .get_started {
     font-size: 1.2rem;
   }
+
   .call_button {
     font-size: 1.2rem;
   }
@@ -397,16 +444,25 @@
   .gap {
     margin-top: -1rem;
   }
+
   .service_box {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: 2rem;
+    column-gap: 2rem; */
     /* margin: 0 0.5rem; */
   }
+
   .services {
     width: 48%;
   }
+
+
+
   /* .service:last-child {
     text-align: center;
   } */
@@ -415,17 +471,21 @@
     height: 15rem;
     gap: 7rem;
   }
+
   .stats {
     padding: 0.5rem;
     width: 120px;
     height: 120px;
   }
+
   .stats_number {
     font-size: 2.5rem;
   }
+
   .stats_details {
     font-size: 0.9rem;
   }
+
   .hanging_line {
     left: 3.5rem;
     bottom: 7rem;
@@ -437,12 +497,15 @@
     top: -1.5rem;
     /* bottom: 2.5rem; */
   }
+
   .reviewer_name {
     font-size: 0.7rem;
   }
+
   .reviewer_designation {
     font-size: 0.5rem;
   }
+
   .review_text {
     font-size: 0.8rem;
   }
@@ -454,9 +517,11 @@
     justify-content: center;
     gap: 2rem;
   }
-  .price_card{
+
+  .price_card {
     margin: 0.625rem;
   }
+
   .service_desc {
     text-align: center;
   }
@@ -466,73 +531,96 @@
   .background_wave {
     height: 38rem;
   }
-  .intro_card{
+
+  .intro_card {
     margin: 0 1.875rem;
   }
+
   .intro_tag {
     font-size: 3.6rem;
   }
+
   .intro_details {
     font-size: 1.6rem;
   }
+
   .intro_buttons {
     margin-top: 3.5rem;
   }
+
   /* .category_name {
     margin: 3rem 0 3.2rem 0;
   } */
   .gap {
     margin-top: -9rem;
   }
+
   .service_box {
-    margin: 0 1.875rem;
+    margin: 0 1.875rem 1rem 1.875rem;
   }
+
   .services {
     padding: 1.8rem;
   }
+
   .service_name {
     font-size: 2rem;
   }
+
   .all_services {
     padding: 3rem;
-    margin: 0 1.875rem;
+    margin: 0 2.1rem;
   }
+
+  .all_service_name {
+    font-size: 2rem;
+  }
+
   /* -----about us -----------*/
   .about_us {
     margin: 0 1.875rem;
   }
+
   .about_stats {
     height: 17rem;
     gap: 15rem;
   }
+
   .stats {
     padding: 0.5rem;
     width: 155px;
     height: 155px;
   }
+
   .stats_number {
     font-size: 2.8rem;
   }
+
   .stats_details {
     font-size: 1.3rem;
   }
+
   .hanging_line {
     left: 4.7rem;
     bottom: 8.7rem;
   }
+
   /* ------------Our reviewes --------------*/
   .review_wrapper {
     display: flex;
     flex-direction: column;
     margin: 0 1.875rem;
   }
+
   .review_profile:nth-child(2n) {
     margin-left: auto;
   }
+
   .review_profile {
     width: 50%;
     min-height: 5rem;
   }
+
   .reviewer_image {
     margin: 0;
     width: 9.5rem;
@@ -541,18 +629,21 @@
     top: -0.7rem;
     left: -0.7rem;
   }
+
   .reviewer_details {
     left: 14.5rem;
     top: -2.6rem;
   }
+
   .reviewer_name {
     font-size: 1.1rem;
   }
+
   .reviewer_designation {
     font-size: 0.8rem;
-    margin:0.5rem; 
+    margin: 0.5rem;
   }
-  
+
   .review_text {
     font-size: 1.2rem;
     margin: 1.5rem 0.8rem 0.3rem 9.3rem;
@@ -570,22 +661,27 @@
   .blog_titles {
     font-size: 1.2rem;
   }
+
   .publish_date {
     font-size: 0.9rem;
   }
+
   .blog_sidebar {
     display: unset;
     margin-left: -38rem;
   }
+
   .blog_intro {
     font-size: 3rem;
     color: #fff;
     font-weight: 600;
     max-width: 30rem;
   }
+
   .blog_button {
     margin: 3rem 0 0 0;
   }
+
   .prime_col_button {
     /* all: unset; */
     background-color: #2a1d51;
@@ -595,6 +691,7 @@
     color: #fff;
     text-decoration: none;
   }
+
   .prime_col_button:hover {
     background-color: #fff;
     border: unset;
@@ -605,18 +702,23 @@
   .service_desc {
     margin-bottom: 1.5rem;
   }
+
   .check_icons {
     font-size: 1.5rem;
   }
+
   .offer_desc {
     font-size: 1.2rem;
   }
+
   .offer_details {
     margin: 0 0 1rem 0;
   }
+
   .price_button {
     margin-top: 3.5rem;
   }
+
   .green_fill_button {
     font-size: 1rem;
   }
@@ -627,11 +729,13 @@
     top: -1.2rem;
     left: -0.5rem;
   }
+
   .reviewer_details {
     left: 15.8rem;
     /* top: -2.8rem; */
     /* bottom: 2.5rem; */
   }
+
   /* .reviewer_name {
     font-size: 1.2rem;
   }
@@ -647,9 +751,11 @@
   .background_wave {
     height: 50rem;
   }
+
   .intro_tag {
     font-size: 4rem;
   }
+
   .intro_details {
     font-size: 2rem;
   }
@@ -657,29 +763,37 @@
   .intro_svg {
     margin-right: 2.5rem;
   }
+
   .intro_img {
     width: 33rem;
     height: 33rem;
   }
+
   .intro_paragraph {
     width: 70rem;
   }
+
   .intro_details {
     margin: 1rem 0 2rem 0;
   }
+
   .get_started {
     font-size: 1.6rem;
   }
+
   .call_button {
     font-size: 1.6rem;
   }
+
   .gap {
     margin-top: -10rem;
   }
+
   .review_text {
     font-size: 1.3rem;
   }
-  .reviewer_image{
+
+  .reviewer_image {
     /* margin: 0; */
     width: 9.6rem;
     height: 9.6rem;
@@ -688,16 +802,20 @@
     /* bottom: -1rem; */
     left: -1rem;
   }
+
   .reviewer_details {
     left: 20.8rem;
   }
+
   /* --------- Our blogs ---------------*/
   .blogs {
     border-left: 55rem solid #23adad;
   }
+
   .blog_titles {
     font-size: 1.5rem;
   }
+
   .publish_date {
     font-size: 1.2rem;
   }
