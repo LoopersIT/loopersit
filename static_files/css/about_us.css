@@ -2,13 +2,12 @@
 
 /* ---------about_header----------------*/
 .about_header {
-  background: linear-gradient(
-    90deg,
-    rgba(35, 173, 173, 0.7) 0.07%,
-    rgba(42, 29, 81, 0.9) 99.93%
-  );
+  background: linear-gradient(90deg,
+      rgba(35, 173, 173, 0.7) 0.07%,
+      rgba(42, 29, 81, 0.9) 99.93%);
   padding: 0 0 1rem 0;
 }
+
 .about_intro {
   text-align: center;
 }
@@ -21,6 +20,7 @@
   margin: 0.5rem 0;
   object-fit: cover;
 }
+
 .about_tag {
   display: block;
   font-size: 0.7rem;
@@ -35,7 +35,7 @@
   margin: 1rem 0 0.5rem 0;
 }
 
-.about_nav_icon{
+.about_nav_icon {
   display: inline-block;
   background-color: var(--secondary_col);
   padding-top: 0.3rem;
@@ -51,7 +51,8 @@
   background-color: var(--prime_col);
   color: #fff;
 }
-.about_nav_name{
+
+.about_nav_name {
   text-decoration: none;
   color: #000;
   margin-left: 0.5rem;
@@ -70,21 +71,22 @@
   background-color: var(--secondary_col);
   padding: 1.5rem;
 }
+
 .top_member_card {
   text-align: center;
   border-radius: 1.563rem;
   border: 0.063rem solid #fff;
-  background: linear-gradient(
-    108deg,
-    rgba(255, 255, 255, 0.25) -8.57%,
-    rgba(255, 255, 255, 0.15) 111.32%
-  );
+  background: linear-gradient(108deg,
+      rgba(255, 255, 255, 0.25) -8.57%,
+      rgba(255, 255, 255, 0.15) 111.32%);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   /* padding: 2.5rem; */
   padding: 1rem;
   margin: 1rem 0.5rem;
+  width: 17rem;
 }
+
 .top_member_img {
   width: 9rem;
   height: 9rem;
@@ -92,20 +94,24 @@
   margin-top: -0.5rem;
   object-fit: cover;
 }
+
 .top_member_name {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin: 0.8rem 0.3rem 0.3rem 0.3rem;
   color: #fff;
   font-weight: 500;
 }
+
 .top_member_position {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #fff;
 }
+
 .member_link {
   margin-top: 1rem;
 }
+
 .member_link_icon {
   color: var(--secondary_col);
   font-size: 1.5rem;
@@ -115,22 +121,32 @@
 .bi-linkedin {
   color: #fff;
 }
+
 .bi-github {
   color: #fff;
 }
+
 .bi-facebook {
   color: #fff;
 }
 
 /* -----------team members-----------*/
+.employee_profile_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
 
 .employee_profile {
   background-color: #fff;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
   border-radius: 15px;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 7rem;
+  width: 17rem;
 }
+
 .employee_img {
   width: 10rem;
   height: 10rem;
@@ -138,38 +154,45 @@
   margin-top: -3rem;
   object-fit: cover;
 }
+
 .employee_name {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.5rem 0;
 }
+
 .team_member_link {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .team_member_link_icon {
   /* background-color: var(--secondary_col); */
   border-radius: 50%;
   color: var(--secondary_col);
-  
+
   padding: 0.3rem;
   /* width:2.6rem;
   height:2.6rem; */
 }
-#team_member_linkedin_id{
-  color:var(--secondary_col);
-  font-size: 1.5rem;
-}
-#team_member_github_id{
-  color:var(--secondary_col);
-  font-size: 1.5rem;
-}
-#team_member_facebook_id{
+
+#team_member_linkedin_id {
   color: var(--secondary_col);
   font-size: 1.5rem;
 }
+
+#team_member_github_id {
+  color: var(--secondary_col);
+  font-size: 1.5rem;
+}
+
+#team_member_facebook_id {
+  color: var(--secondary_col);
+  font-size: 1.5rem;
+}
+
 .leading_member_button {
   text-align: center;
   margin-top: 1.5rem;
@@ -180,9 +203,11 @@
   text-align: center;
   background-color: #fff;
 }
+
 .the_message {
   padding: 0.5rem 1rem;
 }
+
 .message_img {
   width: 10rem;
   height: 10rem;
@@ -199,16 +224,19 @@
   /* height: -7rem; */
   position: relative;
 }
+
 .subtract {
   width: 60%;
   /* height: 11rem; */
 }
+
 .vision_img {
   width: 8.5rem;
   height: 8.5rem;
   border-radius: 50%;
   object-fit: cover;
 }
+
 .vision_details {
   width: 9rem;
   font-size: 0.7rem;
@@ -217,11 +245,14 @@
   left: 2rem;
   position: absolute;
 }
+
 @media screen and (min-width: 769px) {
+
   /* ---------about_header----------------*/
   .about_header {
     padding: 1rem 1rem;
   }
+
   .about_intro {
     display: flex;
     flex-direction: row-reverse;
@@ -230,10 +261,12 @@
     align-items: center;
     text-align: left;
   }
+
   .about_intro_icon {
     width: 15rem;
     height: 15rem;
   }
+
   .about_tag {
     font-size: 1.5rem;
     font-family: 600;
@@ -245,6 +278,7 @@
     gap: 1rem;
     margin: 1rem 1.875rem 0 1.875rem;
   }
+
   .about_nav_card {
     width: 50%;
     border-radius: 15px;
@@ -253,25 +287,35 @@
   /* -------------our portfolio -----------*/
 
   /* ----------top members---------*/
+  .top_member_card {
+    width: 19rem;
+  }
+
   .top_member_name {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
+
   .top_member_position {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
+
   /* ----------team members---------*/
   .leading_member {
     margin-bottom: 5rem;
   }
-  .employee_profile_list {
+
+  /* .employee_profile_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-  }
+  } */
+
   .employee_profile {
-    padding: 1.5rem;
+    padding: 1rem;
+    width: 19rem;
   }
+
   .employee_img {
     margin-top: -5rem;
   }
@@ -292,6 +336,7 @@
     border-radius: 15px;
     margin: 0 1.875rem;
   }
+
   .message_img {
     width: 15rem;
     height: 15rem;
@@ -303,11 +348,13 @@
   .subtract {
     width: 50%;
   }
+
   .vision_img {
     width: 15.5rem;
     height: 15.5rem;
     border-radius: 50%;
   }
+
   .vision_details {
     width: 19rem;
     font-size: 1.5rem;
@@ -316,19 +363,23 @@
 }
 
 @media screen and (min-width: 1024px) {
+
   /* ---------about_header----------------*/
   .about_intro_icon {
     width: 25rem;
     height: 25rem;
   }
+
   .about_tag {
     font-size: 3rem;
     font-family: 600;
   }
+
   /* ---------about_nav----------------*/
   .about_nav_card {
     padding: 1.5rem;
   }
+
   .about_nav_icon {
     padding-top: 0.5rem;
     width: 4rem;
@@ -342,18 +393,26 @@
   .top_member_card_list {
     gap: 1.5rem;
   }
+
   .top_member_card {
     padding: 2.5rem;
   }
+
   .top_member_img {
     width: 10rem;
     height: 10rem;
     margin-top: -1rem;
   }
+
   /* ----------team members---------*/
-  .employee_profile {
-    padding: 3rem;
+  .employee_profile_list {
+    margin-top: 4rem;
   }
+
+  .employee_profile {
+    padding: 2rem;
+  }
+
   .employee_img {
     width: 12rem;
     height: 12rem;
@@ -365,6 +424,7 @@
   .subtract {
     width: 60%;
   }
+
   .vision_img {
     width: 31rem;
     height: 31rem;
@@ -379,21 +439,24 @@
 }
 
 @media screen and (min-width: 1540px) {
+
   /* ---------about_header----------------*/
   .about_intro {
     gap: 0.4rem;
   }
+
   .about_intro_icon {
     width: 38rem;
     height: 38rem;
   }
+
   .about_tag {
     font-size: 3.8rem;
     font-family: 600;
   }
 
   /* ---------about_nav----------------*/
-  .about_nav_name{
+  .about_nav_name {
     font-size: 1.5rem;
   }
 
@@ -401,19 +464,27 @@
 
 
   /* ----------Leading members---------*/
-  .employee_profile {
-    padding: 5rem;
+  .top_member_card {
+    width: 22rem;
   }
+
+  .employee_profile {
+    /* padding: 5rem; */
+    width: 22rem;
+    margin-top: 9rem;
+  }
+
   .employee_img {
     width: 14rem;
     height: 14rem;
     margin-top: -10rem;
   }
+
   .employee_name {
     margin-top: 2rem;
   }
 
- 
+
   .leading_member_button {
     margin-top: 6rem;
   }
@@ -422,11 +493,13 @@
   .subtract {
     width: 60%;
   }
+
   .vision_img {
     width: 45rem;
     height: 45rem;
     border-radius: 50%;
   }
+
   .vision_details {
     width: 42rem;
     font-size: 3rem;
