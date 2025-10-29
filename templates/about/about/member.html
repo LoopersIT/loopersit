@@ -14,6 +14,14 @@
     {% with linkedin=member.linkedin github=member.github facebook=member.facebook %}
 
     <div class="employee_profile">
+
+      
+      {% if member.image %}
+      <img class="employee_img" src="{{member.image.url}}" alt="{{member.name}}">
+        {% else %}
+        <img class="employee_img" src="{% static 'img/no_img.jpg' %}" alt="No member photo">
+      {% endif %}
+        
       <!-- <img class="employee_img" src="
       
       {% if member.image %}
@@ -23,13 +31,16 @@
       {% endif %}
         
       " alt="{{leader.name}}" /> -->
-    {% if member.image %}
+
+
+    <!-- {% if member.image %}
     {% thumbnail member.image "300x300" crop="center" as im %}
         <img class="employee_img" src="{{ im.url }}" alt="{{ member.name }}" />
     {% endthumbnail %}
     {% else %}
         <img class="employee_img" src="{% static 'img/no_img.jpg' %}" alt="{{ member.name }}" />
-    {% endif %}
+    {% endif %} -->
+    
       <div class="employee_name">{{member.name}}</div>
       <div class="employee_position">{{member.designation}}</div>
       <div class="team_member_link">
