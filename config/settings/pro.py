@@ -20,6 +20,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['loopersit-final.onrender.com', 'loopersit.com', 'www.loopersit.com']
 
+INSTALLED_APPS += ["cloudinary_storage", "cloudinary"]
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -32,23 +34,24 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'loopdb',
-#         'USER': 'loopdbuser',
-#         'PASSWORD': os.getenv('PGRESS_PASSWORD'),
-#         'HOST': 'localhost',
-#         'PORT': '5432'
-#     }
-# }
+CLOUDINARY_STORAGE = {
+    "CLOUD_NAME": os.environ.get("CLOUDINARY_CLOUD_NAME"),
+    "API_KEY": os.environ.get("CLOUDINARY_API_KEY"),
+    "API_SECRET": os.environ.get("CLOUDINARY_API_SECRET"),
+}
+
+STORAGES = {
+    "default": {
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage"
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"
+    }
+}
 
 
-# EMAIL_HOST = 'smtp.gmail.com' 
 EMAIL_HOST_USER = 'szahan4@gmail.com' 
-# EMAIL_HOST_PASSWORD = os.getenv('MAIL_PASSWORD')
-# EMAIL_PORT = 587 
-# EMAIL_USE_TLS = True
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
