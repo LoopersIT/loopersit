@@ -50,5 +50,7 @@ DATABASES = {
 # EMAIL_PORT = 587 
 # EMAIL_USE_TLS = True
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 # MEDIA_URL = 'https://plant-trends.bsmiab.org/media/'
