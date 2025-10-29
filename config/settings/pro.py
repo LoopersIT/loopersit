@@ -18,7 +18,7 @@ ADMINS = (
 )
 
 
-ALLOWED_HOSTS = ['157.230.230.195', 'loopersit.com', 'www.loopersit.com']
+ALLOWED_HOSTS = ['loopersit-final.onrender.com', 'loopersit.com', 'www.loopersit.com']
 
 DATABASES = {
     'default': {
