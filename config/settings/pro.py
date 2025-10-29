@@ -45,7 +45,7 @@ DATABASES = {
 
 
 # EMAIL_HOST = 'smtp.gmail.com' 
-# EMAIL_HOST_USER = 'szahan4@gmail.com' 
+EMAIL_HOST_USER = 'szahan4@gmail.com' 
 # EMAIL_HOST_PASSWORD = os.getenv('MAIL_PASSWORD')
 # EMAIL_PORT = 587 
 # EMAIL_USE_TLS = True
