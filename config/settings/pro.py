@@ -10,7 +10,7 @@ tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = False
+DEBUG = True
 
 
 # ADMINS = (
