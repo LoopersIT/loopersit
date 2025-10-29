@@ -13,9 +13,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
 
-ADMINS = (
-    ('Sarwar Zahan', 'zahan.ads@gmail.com'),
-)
+# ADMINS = (
+#     ('Sarwar Zahan', 'zahan.ads@gmail.com'),
+# )
 
 
 ALLOWED_HOSTS = ['loopersit-final.onrender.com', 'loopersit.com', 'www.loopersit.com']
@@ -43,11 +43,12 @@ DATABASES = {
 #     }
 # }
 
-EMAIL_HOST = 'smtp.gmail.com' 
-EMAIL_HOST_USER = 'szahan4@gmail.com' 
-EMAIL_HOST_PASSWORD = os.getenv('MAIL_PASSWORD')
-EMAIL_PORT = 587 
-EMAIL_USE_TLS = True
+
+# EMAIL_HOST = 'smtp.gmail.com' 
+# EMAIL_HOST_USER = 'szahan4@gmail.com' 
+# EMAIL_HOST_PASSWORD = os.getenv('MAIL_PASSWORD')
+# EMAIL_PORT = 587 
+# EMAIL_USE_TLS = True
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 # MEDIA_URL = 'https://plant-trends.bsmiab.org/media/'
