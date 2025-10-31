@@ -25,7 +25,8 @@ INSTALLED_APPS += ["cloudinary_storage", "cloudinary"]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': tmpPostgres.path.replace('/', ''),
+        # 'NAME': tmpPostgres.path.replace('/', ''),
+        'NAME': tmpPostgres.path.lstrip('/'),
         'USER': tmpPostgres.username,
         'PASSWORD': tmpPostgres.password,
         'HOST': tmpPostgres.hostname,
