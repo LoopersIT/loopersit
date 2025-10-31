@@ -5,7 +5,12 @@ from urllib.parse import urlparse, parse_qsl
 
 load_dotenv()
 
-tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
+# Get DATABASE_URL and decode if it is bytes
+database_url = os.getenv("DATABASE_URL")
+if isinstance(database_url, bytes):
+    database_url = database_url.decode('utf-8')
+
+tmpPostgres = urlparse(database_url)
 
 
 SECRET_KEY = os.getenv('SECRET_KEY')
