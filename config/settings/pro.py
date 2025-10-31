@@ -31,7 +31,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         # 'NAME': tmpPostgres.path.replace('/', ''),
-        'NAME': tmpPostgres.path.lstrip('/'),
+        'NAME': 'neondb',
         'USER': tmpPostgres.username,
         'PASSWORD': tmpPostgres.password,
         'HOST': tmpPostgres.hostname,
